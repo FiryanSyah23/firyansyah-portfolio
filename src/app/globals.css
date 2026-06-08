@@ -1,52 +1,76 @@
 @import "tailwindcss";
-:root {
-	--color-text: #eeeeff;
-	--color-mid: #7f7caf;
-	--color-dark: #09001d;
-	--color-steel: #9fb4c7;
-}
 
-html {
-	box-sizing: border-box;
-}
-* {
-	margin: 0;
-	padding: 0;
-}
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
-}
-input,
-textarea,
-select,
-button {
-	outline: none;
-}
-input {
-	line-height: normal;
-}
-label,
-button {
-	cursor: pointer;
-}
-a {
-	text-decoration: none;
-}
-img {
-	display: block;
-	max-width: 100%;
+@theme {
+	/* ===== PALETTE WARM EARTHY ===== */
+	--color-primary: #df2935; /* merah — CTA, tombol utama */
+	--color-secondary: #86ba90; /* sage — badge, success, accent */
+	--color-accent: #dfa06e; /* caramel — card, highlight */
+	--color-dark: #412722; /* coklat tua — teks, heading */
+	--color-light: #f5f3bb; /* krem — background halaman */
+
+	/* PRIMARY (merah) SHADES */
+	--color-primary-50: #fdecea;
+	--color-primary-100: #facdd0;
+	--color-primary-200: #f49da1;
+	--color-primary-300: #ee6d72;
+	--color-primary-400: #e84850;
+	--color-primary-500: #df2935; /* ← asli */
+	--color-primary-600: #b82029;
+	--color-primary-700: #8e181f;
+	--color-primary-800: #651015;
+	--color-primary-900: #3b080b;
+
+	/* SECONDARY (sage) SHADES */
+	--color-secondary-50: #f0f6f1;
+	--color-secondary-100: #d6eada;
+	--color-secondary-200: #b8d9bd;
+	--color-secondary-300: #9acba0;
+	--color-secondary-400: #86ba90; /* ← asli */
+	--color-secondary-500: #6aa376;
+	--color-secondary-600: #4e8a5a;
+	--color-secondary-700: #3a6b44;
+	--color-secondary-800: #264d2e;
+	--color-secondary-900: #132e18;
 }
 
 @layer base {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+	input,
+	textarea,
+	select,
+	button {
+		outline: none;
+	}
+	input {
+		line-height: normal;
+	}
+	label,
+	button {
+		cursor: pointer;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
 	html {
 		scroll-behavior: smooth;
 		scroll-padding-top: 80px;
+		box-sizing: border-box;
 	}
 
 	body {
-		background-color: var(--color-dark);
-		color: var(--color-text);
+		background-color: var(--color-light);
+		color: var(--color-dark);
 	}
 }
