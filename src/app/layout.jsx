@@ -35,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full scrollbar-none`}>
-			<body>
+			<body className="bg-radial-[at_50%_100%] from-[#3c099a] to-[#000000]  bg-fixed">
 				<Navbar />
 				<main>{children}</main>
 			</body>

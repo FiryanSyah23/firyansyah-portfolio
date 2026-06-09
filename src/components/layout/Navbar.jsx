@@ -1,47 +1,66 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import ButtonNavbar from "./ButtonNavbar";
 
 export default function Navbar() {
 	const [menu, setMenu] = useState(false);
 
 	return (
-		<div className="header fixed w-full p-3">
-			<div className="-md:container lg:w-290 mx-auto  relative py-2 rounded-2xl bg-white border border-accent ">
-				<nav className="navbar flex justify-between items-center px-4  ">
-					<div className="nav-logo flex items-center gap-2 ">
-						<Image src="/OctaSys.png" alt="logoNAV" width={40} height={40} />
-						<h2 className="font-bold text-xl uppercase">Firyan Syah</h2>
+		<div className="header w-full 3 fixed text-text pt-5 px-3 ">
+			<div className="container lg:w-330 mx-auto bg-panel py-1 sm:py-1 rounded-xl relative">
+				<div className="flex justify-between items-center px-8 ">
+					<div className="nav-title flex gap-2 items-center">
+						<Image src={"/FIROCTASYS.png"} alt="LOGOPAGE" width={25} height={25} className="" />
+						<a href="#">
+							<h2 className=" font-bold lg:text-xl text-lg tracking-widest ">FIRYAN SYAH</h2>
+						</a>
 					</div>
-					<div className="nav-link gap-5 *:capitalize text-lg font-semibold *:text-dark hidden sm:flex">
-						<a href="#">home</a>
-						<a href="#">about</a>
-						<a href="#">experience</a>
-						<a href="#">projects</a>
-						<div className="sosmed-button"></div>
+
+					<div className="group-action-link flex items-center gap-5">
+						<div className="navlink  capitalize gap-2 sm:flex hidden font-semibold *:sm:hover:bg-secondary *:p-1.5 *:rounded-ee-2xl *:rounded-ss-2xl *:hover:outline *:transition-all *:duration-500 *:ease-in-out">
+							<a href="#">Home</a>
+							<a href="#">about</a>
+							<a href="#">experience</a>
+							<a href="#">project</a>
+						</div>
+
+						<div className="button-link-sosmed hidden sm:flex items-center gap-2 ">
+							<div className="group-logo-sosmed ri-3x *:hover:text-secondary">
+								<a href="https://github.com/FiryanSyah23">
+									<i className="ri-github-fill"></i>
+								</a>
+							</div>
+							<button className=" rounded-ee-2xl rounded-ss-2xl bg-primary hover:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_6px_8px_1px_rgba(0,0,0)] active:shadow-none">
+								CV Firyan Syah
+							</button>
+						</div>
 					</div>
+
 					<button
-						className="sm:hidden nav-menu "
+						className="menu-bar sm:hidden"
 						onClick={() => {
 							setMenu(!menu);
 						}}
 					>
 						<i className="ri-menu-line ri-2x"></i>
 					</button>
-				</nav>
-				<div
-					className={`absolute w-full rounded-2xl sm:hidden border border-accent ${menu ? "top-18 bg-white opacity-100" : "-top-75 opacity-0"}  transition-all duration-600 sm:transition-none `}
-				>
-					<div className="grid grid-cols-2 gap-2 font-semibold p-3">
-						<div className="flex flex-col *:w-full *:py-1 *:pl-2 capitalize gap-2 " onClick={() => setMenu(!menu)}>
-							<a href="#">home</a>
+				</div>
+
+				<div className={`absolute sm:hidden bg-panel/70 ${menu ? "top-16 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl  duration-500`}>
+					<div className="flex flex-col gap-2">
+						<div className="nav-panel-link flex flex-col *:py-2 text-center  *:rounded-xl  *:hover:bg-secondary *:hover:outline *:duration-500">
+							<a href="#">Home</a>
 							<a href="#">about</a>
 							<a href="#">experience</a>
-							<a href="#">projects</a>
+							<a href="#">project</a>
 						</div>
-						<div className="flex flex-col gap-2 text-center *:mx-2 *:py-1 *:rounded-xl *:bg-secondary-200 p-1">
-							<ButtonNavbar />
+						<div className="button-link-sosmed flex flex-col border-t border-t-secondary gap-2 items-center">
+							<div className="group-logo-sosmed ri-3x *:hover:text-secondary">
+								<a href="https://github.com/FiryanSyah23">
+									<i className="ri-github-fill"></i>
+								</a>
+							</div>
+							<button className="bg-primary p-1 rounded-xl hover:bg-secondary self-stretch duration-500">CV Firyan Syah</button>
 						</div>
 					</div>
 				</div>
