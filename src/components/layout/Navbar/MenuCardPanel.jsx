@@ -1,11 +1,11 @@
-import SectionsLink from "../../sections/SectionsLink";
-import SosmedLogoLink from "../../sections/SosmedLogoLink";
+import SectionsLink from "./SectionsLink";
+import SosmedLogoLink from "./SosmedLogoLink";
 
 export default function MenuCardPanel({ menu, setMenu }) {
 	return (
 		<div
-			className={`absolute md:hidden bg-panel/70 ${menu ? "top-14 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
-			onClick={() => setMenu(!menu)}
+			className={`absolute md:hidden bg-panel/98 ${menu ? "top-14 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
+			onClick={() => setMenu(false)}
 		>
 			<div className="flex flex-col gap-2">
 				<div className="nav-panel-link flex flex-col *:py-2 text-center  *:rounded-xl  *:hover:bg-secondary *:hover:outline *:duration-500 capitalize">

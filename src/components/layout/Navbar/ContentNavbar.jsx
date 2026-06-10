@@ -1,12 +1,12 @@
 import Image from "next/image";
-import SosmedLogoLink from "../../sections/SosmedLogoLink";
-import SectionsLink from "../../sections/SectionsLink";
+import SosmedLogoLink from "./SosmedLogoLink";
+import SectionsLink from "./SectionsLink";
 
 export default function ContentNavbar({ setMenu }) {
 	return (
 		<div className="flex justify-between items-center px-8 ">
 			<div className="nav-title flex gap-2 items-center">
-				<Image src={"/FIROCTASYS.png"} alt="LOGOPAGE" width={25} height={25} className="" />
+				<Image src={"/FIROCTASYS.png"} alt="LOGOPAGE" width={25} height={25} className="w-7 h-auto" priority={true} />
 				<a href="#">
 					<h2 className=" font-bold lg:text-xl text-lg tracking-widest text-nowrap">FIRYAN</h2>
 				</a>
