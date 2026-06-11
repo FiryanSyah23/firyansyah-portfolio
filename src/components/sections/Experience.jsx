@@ -11,13 +11,14 @@ export default function Experience() {
 					<h2 className="expe-title text-white font-semibold text-end text-xl">My Programming Journey |</h2>
 					<RenderExperienceCard />
 				</div>
-				<div className="expe-skills pt-70">
+				<div className="expe-skills pt-70 ">
 					<h2 className="expe-title text-white font-semibold text-center text-xl">Programming Languages & Tools </h2>
 					<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
 						These are the technologies and tools I work with daily to craft fast, interactive, and responsive websites from frontend to backend.
 					</p>
 				</div>
 			</div>
+			
 			<TechSkills />
 		</section>
 	);
