@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Homepage() {
 	return (
-		<section id="home" className="lg:py-32 py-20">
+		<section id="home" className="lg:py-32 py-20 scroll-mt-20">
 			<div className="container mx-auto pt-30 px-4 ">
 				<div className="grid lg:grid-cols-2 grid-cols-1  text-white">
 					<div className="main-header title flex justify-center lg:text-start text-center flex-col gap-3">
@@ -11,7 +11,7 @@ export default function Homepage() {
 						<p className="lg:text-8xl text-6xl tracking-tight">
 							Let&apos;s <span className="text-accent font-bold">Bring</span> <br /> Your <span className="text-accent font-bold">Ideas</span> to Life.
 						</p>
-						<p className="lg:text-lg/relaxed text-sm/relaxed text-muted ">
+						<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-8">
 							I enjoy building websites, mobile applications, and embedded systems that are both functional and engaging. With a background in Electrical
 							Engineering and hands-on experience in IoT automation and hardware control, I use technologies such as JavaScript, Node.js, React, React
 							Native, Python, and C/C++ to continuously learn and create solutions — from web interfaces to real-world hardware systems.

@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
-
 :root {
 	/* ===== BRAND COLORS ===== */
 
@@ -62,6 +60,44 @@
 
 	--color-border: #2a236d;
 	--color-border-active: #b13bff;
+
+	/* ===== animation ===== */
+	--animate-slider-left: slider-left linear infinite;
+	--animate-slider-right: slider-right linear infinite;
+	--animate-bounce-skill: bounce-skill 0.6s ease-in-out infinite;
+
+	@keyframes slider-left {
+		0% {
+			transform: translateX(100vw);
+		}
+		100% {
+			transform: translateX(-300px);
+		}
+	}
+
+	@keyframes slider-right {
+		0% {
+			transform: translateX(-300px);
+		}
+		100% {
+			transform: translateX(100vw);
+		}
+	}
+	@keyframes bounce-skill {
+		0%,
+		100% {
+			transform: translateY(0px) scale(1);
+		}
+		30% {
+			transform: translateY(-12px) scale(1.05);
+		}
+		50% {
+			transform: translateY(-6px) scale(1.02);
+		}
+		70% {
+			transform: translateY(-10px) scale(1.04);
+		}
+	}
 }
 
 @layer base {
@@ -98,5 +134,6 @@
 		scroll-behavior: smooth;
 		scroll-padding-top: 80px;
 		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 }
