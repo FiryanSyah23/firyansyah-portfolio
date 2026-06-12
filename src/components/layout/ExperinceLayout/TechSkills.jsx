@@ -3,49 +3,63 @@
 import dataSkills from "@/data/skills";
 import Image from "next/image";
 import { useState } from "react";
-import { IoNotificationsCircleOutline } from "react-icons/io5";
+
+const generateShuffledDelays = (count, duration) => {
+	const delays = Array.from({ length: count }, (_, i) => -((i / count) * duration));
+
+	for (let i = delays.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[delays[i], delays[j]] = [delays[j], delays[i]];
+	}
+
+	return delays;
+};
 
 function buildSkillRows() {
 	const categories = [
 		{ key: "Frontend", direction: "animate-slider-left" },
 		{ key: "Backend", direction: "animate-slider-right" },
 		{ key: "Database", direction: "animate-slider-left" },
-		{ key: "Tools", direction: "animate-slider-right" },
-		{ key: "Embedded & IoT", direction: "animate-slider-left" },
+		{ key: "Embedded & IoT", direction: "animate-slider-right" },
+		{ key: "Tools", direction: "animate-slider-left" },
 	];
 
 	return categories.map(({ key, direction }) => {
 		const category = dataSkills.find((item) => item.category === key);
 		const items = [...(category?.items || [])];
 		const total = items.length;
-		const duration = total * 4;
+		const duration = total * 6;
+
+		// ✅ Generate delays yang sudah tersebar merata & di-shuffle
+		const delays = generateShuffledDelays(total, duration);
 
 		return {
 			direction,
 			duration,
-			items: items.map((item) => ({
+			items: items.map((item, i) => ({
 				...item,
-				delay: -(Math.random() * duration),
+				delay: delays[i], // ✅ Pakai delay dari array, bukan random murni
 			})),
 		};
 	});
 }
 
-// Dipanggil sekali saat module load
 const skillRows = buildSkillRows();
+
+// ... sisa kode sama persis, tidak perlu diubah
 
 export default function TechSkills() {
 	const [expand, setExpand] = useState(null);
 
 	return (
-		<div className="mt-20 text-white overflow-hidden ">
+		<div className="mt-10 text-white overflow-hidden ">
 			<div className="flex cursor-default flex-col gap-5 relative pb-40">
 				{skillRows.map((row, rowIndex) => (
-					<div key={rowIndex} className="relative h-20 ">
+					<div key={rowIndex} className="relative h-15 py-2">
 						{row.items.map((item, index) => (
 							<div
 								key={index}
-								className={` px-4 py-2 rounded-xl  flex ${expand?.name === item.name ? "flex-col z-50 w-60 bg-panel-hover" : "bg-panel/90 "} gap-2 items-center absolute hover:[animation-play-state:paused] ${row.direction} `}
+								className={` px-4 py-2 rounded-xl  flex ${expand?.name === item.name ? "flex-col z-50 w-60 bg-panel-hover shadow-[0px_1px_5px_2px_rgb(255,255,255)] " : "bg-panel/90 "} gap-2 items-center absolute hover:[animation-play-state:paused] ${row.direction} `}
 								style={{
 									animationDuration: `${row.duration}s`,
 									animationDelay: `${item.delay}s`,
@@ -67,11 +81,12 @@ export default function TechSkills() {
 										<p className="description text-sm/tight text-muted  text-center">{item.description}</p>
 										<div className="experience flex justify-between mt-2 text-secondary capitalize font-semibold text-xs">
 											<span className="flex gap-1">
-												<i class="ri-calendar-fill"></i>
-												{item.experienceYear} years
+												{item.experienceYear ? <i className="ri-calendar-fill"></i> : ""}
+												{item.experienceYear ? `${item.experienceYear} years` : ""}
 											</span>
 											<span className="flex gap-1">
-												{item.projectCount} projects <i class="ri-folders-line"></i>
+												{item.projectCount >= 0 ? <i className="ri-folders-line"></i> : ""}
+												{item.projectCount ? `${item.projectCount} project` : ""}
 											</span>
 										</div>
 									</div>

@@ -5,7 +5,7 @@ export default function RenderExperienceCard() {
 	return (
 		<div className="expe-main  flex justify-center gap-15 mt-20 flex-wrap">
 			{dataExperience.map((item, index) => (
-				<div key={index} className="lg:w-90 md:w-80 w-100 flex flex-col items-center  gap-4 w-70 text-center bg-panel p-5 text-white rounded-xl ">
+				<div key={index} className="lg:w-115 md:w-139 w-100 flex flex-col items-center  gap-4 w-70 text-center bg-panel p-5 text-white rounded-xl ">
 					<div className="w-50 h-auto outline outline-white rounded-full overflow-hidden p-5 bg-white ">
 						<Image src={item.img} alt={item.company} width={500} height={500} className="w-50 h-auto " priority={true} />
 					</div>

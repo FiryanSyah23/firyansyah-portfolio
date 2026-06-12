@@ -1,7 +1,7 @@
 import React from "react";
-import RenderExperienceCard from "../layout/SectionExperience/RenderExperienceCard";
+import RenderExperienceCard from "../layout/ExperinceLayout/RenderExperienceCard";
 import dynamic from "next/dynamic";
-const TechSkills = dynamic(() => import("@/components/layout/SectionExperience/TechSkills"), { ssr: false });
+const TechSkills = dynamic(() => import("@/components/layout/ExperinceLayout/TechSkills"), { ssr: false });
 
 export default function Experience() {
 	return (
@@ -14,11 +14,12 @@ export default function Experience() {
 				<div className="expe-skills pt-70 ">
 					<h2 className="expe-title text-white font-semibold text-center text-xl">Programming Languages & Tools </h2>
 					<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
-						These are the technologies and tools I work with daily to craft fast, interactive, and responsive websites from frontend to backend.
+						These are the technologies and tools I work with daily, backed by years of experience building fast, interactive web applications, and
+						developing IoT systems that connect the digital world with the physical one.
 					</p>
 				</div>
 			</div>
-			
+
 			<TechSkills />
 		</section>
 	);
