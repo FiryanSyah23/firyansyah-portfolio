@@ -22,7 +22,7 @@ export default function ContentNavbar({ setMenu }) {
 						<SosmedLogoLink />
 					</div>
 					<button className=" rounded-ee-2xl rounded-ss-2xl bg-primary hover:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap">
-						CV Firyan Syah
+						View my CV
 					</button>
 				</div>
 			</div>

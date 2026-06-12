@@ -25,12 +25,10 @@ function buildSkillRows() {
 	];
 
 	return categories.map(({ key, direction }) => {
-		const category = dataSkills.find((item) => item.category === key);
-		const items = [...(category?.items || [])];
+		const findCategory = dataSkills.find((item) => item.category === key);
+		const items = [...(findCategory?.items || [])];
 		const total = items.length;
 		const duration = total * 6;
-
-		// ✅ Generate delays yang sudah tersebar merata & di-shuffle
 		const delays = generateShuffledDelays(total, duration);
 
 		return {
@@ -38,15 +36,14 @@ function buildSkillRows() {
 			duration,
 			items: items.map((item, i) => ({
 				...item,
-				delay: delays[i], // ✅ Pakai delay dari array, bukan random murni
+				delay: delays[i],
+				key,
 			})),
 		};
 	});
 }
 
 const skillRows = buildSkillRows();
-
-// ... sisa kode sama persis, tidak perlu diubah
 
 export default function TechSkills() {
 	const [expand, setExpand] = useState(null);
@@ -55,17 +52,18 @@ export default function TechSkills() {
 		<div className="mt-10 text-white overflow-hidden ">
 			<div className="flex cursor-default flex-col gap-5 relative pb-40">
 				{skillRows.map((row, rowIndex) => (
-					<div key={rowIndex} className="relative h-15 py-2">
+					<div key={rowIndex} className="relative h-15 py-4 ">
 						{row.items.map((item, index) => (
 							<div
 								key={index}
-								className={` px-4 py-2 rounded-xl  flex ${expand?.name === item.name ? "flex-col z-50 w-60 bg-panel-hover shadow-[0px_1px_5px_2px_rgb(255,255,255)] " : "bg-panel/90 "} gap-2 items-center absolute hover:[animation-play-state:paused] ${row.direction} `}
+								className={` px-4 py-2 flex justify-center gap-2 items-center absolute hover:[animation-play-state:paused]  hover:bg-panel-hover  hover:rounded-ee-4xl hover:rounded-ss-4xl rounded-ss-4xl rounded-ee-4xl shadow-[0px_0px_2px_2px_rgb(255,255,255)] transition-all duration-1000  ${expand?.name === item.name && expand?.key !== "Tools" ? "z-50 w-56 h-45 flex-col" : "bg-panel/90 h-10"} ${row.direction}  
+									${expand?.key === "Tools" && expand?.name === item.name ? "flex-col h-37 w-56 " : ""}
+									`}
 								style={{
 									animationDuration: `${row.duration}s`,
 									animationDelay: `${item.delay}s`,
 								}}
 								onMouseEnter={() => setExpand(item)}
-								// ✅ Reset state saat mouse pergi
 								onMouseLeave={() => setExpand(null)}
 							>
 								<Image
@@ -73,11 +71,12 @@ export default function TechSkills() {
 									width={50}
 									height={50}
 									alt={item.name}
+									priority={true}
 									className={`h-auto md:w-5 w-4 ${expand?.name === item.name ? "md:w-10" : ""}`}
 								/>
 								<p className="text-text md:text-lg text-sm">{item.name}</p>
-								<div className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}  duration-2000`}>
-									<div className={`${expand?.name === item.name ? "" : "hidden"}`}>
+								<div className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}   transition-all duration-3000`}>
+									<div className={`${expand?.name === item.name ? "" : "hidden"} `}>
 										<p className="description text-sm/tight text-muted  text-center">{item.description}</p>
 										<div className="experience flex justify-between mt-2 text-secondary capitalize font-semibold text-xs">
 											<span className="flex gap-1">
