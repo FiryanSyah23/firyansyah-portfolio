@@ -38,7 +38,7 @@ export default function TechSkillsList() {
 												<p className="text-sm">{tech.name}</p>
 											</div>
 
-											<div className={`${hoverList ? "opacity-100 delay-150 duration-4000 ease-in-out" : "opacity-0"}`}>
+											<div className={`${hoverList ? "opacity-100 delay-150 duration-2500 ease-in-out" : "opacity-0"}`}>
 												<div
 													className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"} 
 													`}
@@ -47,7 +47,7 @@ export default function TechSkillsList() {
 												</div>
 											</div>
 
-											<div className={`${hoverList ? "opacity-100 delay-150 duration-4000  ease-in-out" : "opacity-0"}`}>
+											<div className={`${hoverList ? "opacity-100 delay-150 duration-2500  ease-in-out" : "opacity-0"}`}>
 												<div
 													className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"} 
 													`}
