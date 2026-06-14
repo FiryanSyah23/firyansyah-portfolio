@@ -14,12 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-	metadataBase: new URL("https://firyansyah.vercel.app"),
+	metadataBase: new URL("https://firyansyah-portfolio.vercel.app"),
 	title: {
 		default: "Firyan Syah | Full Stack Developer",
 		template: "%s | Firyan Syah", // tiap page bisa custom
 	},
 	description: "Portfolio Firyan Syah, developer spesialis React, Node.js, Next.js",
+	verification: {
+		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
+	},
 	keywords: ["web developer", "react developer", "next.js"],
 	authors: [{ name: "Firyan Syah" }],
 	openGraph: {

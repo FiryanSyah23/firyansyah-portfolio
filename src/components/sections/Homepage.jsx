@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Homepage() {
 	return (
-		<section id="home" className="lg:py-32 py-20 scroll-mt-20">
-			<div className="container mx-auto pt-30 px-4 ">
+		<section id="home" className="lg:py-32 py-20 scroll-mt-20 h-screen flex items-center">
+			<div className="container mx-auto px-4 ">
 				<div className="grid lg:grid-cols-2 grid-cols-1  text-white">
 					<div className="main-header title flex justify-center lg:text-start text-center flex-col gap-3">
 						<h1 className="lg:text-4xl/snug text-2xl/snug font-bold">Hello I&apos;m Firyan Syah</h1>
-						<p className="lg:text-8xl text-6xl tracking-tight">
+						<p className="lg:text-7xl text-6xl tracking-tight">
 							Let&apos;s <span className="text-accent font-bold">Bring</span> <br /> Your <span className="text-accent font-bold">Ideas</span> to Life.
 						</p>
 						<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-8">

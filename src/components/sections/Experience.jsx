@@ -33,9 +33,9 @@ export default function Experience() {
 	}, [changeStyle]);
 
 	return (
-		<section id="experience" className="lg:py-60 py-40 w-full -scroll-mt-50 ">
+		<section id="experience" className="pt-30 w-full -scroll-mt-50 ">
 			<div className="expe-content px-8 container mx-auto">
-				<h2 className="expe-title text-white font-semibold text-end  text-xl ">My Programming Journey |</h2>
+				<h2 className="expe-title text-white font-semibold text-xl ">|My Programming Journey</h2>
 
 				<RenderExperienceCard />
 			</div>
