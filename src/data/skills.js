@@ -1,13 +1,14 @@
 const dataSkills = [
 	{
 		category: "Frontend",
+		icon: "ri-layout-line",
 		items: [
 			{
 				name: "JavaScript",
 				logo: "/logo/javascript.png",
 				description: "Building interactive and dynamic web applications with modern JavaScript.",
 				projectCount: 2,
-				experienceYear: 3,
+				experienceYear: 1,
 			},
 			{
 				name: "React",
@@ -34,12 +35,13 @@ const dataSkills = [
 	},
 	{
 		category: "Backend",
+		icon: "ri-server-line",
 		items: [
 			{
 				name: "TypeScript",
 				logo: "/logo/ts.png",
 				description: "Writing scalable and type-safe applications with TypeScript.",
-				projectCount: 1,
+				projectCount: 0,
 				experienceYear: 1,
 			},
 
@@ -54,13 +56,14 @@ const dataSkills = [
 				name: "Express.js",
 				logo: "/logo/express.png",
 				description: "Building RESTful APIs and web services with Express.js.",
-				projectCount: 1,
+				projectCount: 0,
 				experienceYear: 1,
 			},
 		],
 	},
 	{
 		category: "Database",
+		icon: "ri-database-2-line",
 		items: [
 			{
 				name: "MySQL",
@@ -88,20 +91,21 @@ const dataSkills = [
 
 	{
 		category: "Embedded & IoT",
+		icon: "ri-cpu-line",
 		items: [
 			{
 				name: "Arduino",
 				logo: "/logo/arduino.png",
 				description: "Developing microcontroller and Internet of Things projects.",
 				projectCount: 2,
-				experienceYear: 4,
+				experienceYear: 2,
 			},
 			{
 				name: "C++",
 				logo: "/logo/c++.png",
 				description: "Programming embedded systems and high-performance applications.",
-				projectCount: 0,
-				experienceYear: 1,
+				projectCount: 1,
+				experienceYear: 2,
 			},
 			{
 				name: "Python",
@@ -114,6 +118,7 @@ const dataSkills = [
 	},
 	{
 		category: "Tools",
+		icon: "ri-tools-line",
 		items: [
 			{
 				name: "Git",

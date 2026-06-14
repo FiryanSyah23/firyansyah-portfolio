@@ -4,7 +4,7 @@ import SectionsLink from "./SectionsLink";
 
 export default function ContentNavbar({ setMenu }) {
 	return (
-		<div className="flex justify-between items-center px-8 py-2">
+		<div className="flex justify-between items-center px-8 py-2 ">
 			<div className="nav-title flex gap-2 items-center">
 				<Image src={"/FIROCTASYS.png"} alt="LOGOPAGE" width={200} height={200} className="w-8 h-auto" priority={true} />
 				<a href="#">
@@ -21,7 +21,12 @@ export default function ContentNavbar({ setMenu }) {
 					<div className="group-logo-sosmed text-4xl *:hover:text-secondary flex gap-2  ">
 						<SosmedLogoLink />
 					</div>
-					<button className=" rounded-ee-2xl rounded-ss-2xl bg-primary hover:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap">
+					<button
+						className=" rounded-lg bg-primary hover:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap"
+						onClick={() => {
+							window.location.href = "/files/CV_Firyan_Syah.pdf";
+						}}
+					>
 						View my CV
 					</button>
 				</div>
