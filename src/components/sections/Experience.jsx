@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RenderExperienceCard from "../layout/ExperinceLayout/RenderExperienceCard";
 import TechSkillsList from "../layout/ExperinceLayout/TechSkillsList";
 import { AnimatePresence } from "framer-motion";
@@ -15,6 +15,23 @@ const variantsInit = {
 
 export default function Experience() {
 	const [changeStyle, setChangeStyle] = useState(false);
+
+	useEffect(() => {
+		const saveStyle = async () => {
+			const saveState = localStorage.getItem("changeStyle");
+
+			if (saveState !== null) {
+				setChangeStyle(JSON.parse(saveState));
+			}
+		};
+
+		saveStyle();
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem("changeStyle", JSON.stringify(changeStyle));
+	}, [changeStyle]);
+
 	return (
 		<section id="experience" className="lg:py-60 py-40 w-full -scroll-mt-50 ">
 			<div className="expe-content px-8 container mx-auto">
