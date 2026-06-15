@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
 	metadataBase: new URL("https://firyansyah-portfolio.vercel.app"),
 	title: {
-		default: "Firyan Syah | Full Stack Developer",
+		default: "Hi, I'm Firyan Syah — a Full Stack Developer who loves turning ideas into real web products using Next.js, MongoDB and Express.js",
 		template: "%s | Firyan Syah", // tiap page bisa custom
 	},
-	description: "Portfolio Firyan Syah, developer spesialis React, Node.js, Next.js",
+	description: "Hello I'm firyan syah ,",
 	verification: {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},

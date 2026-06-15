@@ -17,7 +17,14 @@ export default function MenuCardPanel({ menu, setMenu }) {
 						<SosmedLogoLink />
 					</div>
 
-					<button className="bg-primary p-1 rounded-xl hover:bg-secondary self-stretch duration-500">CV Firyan Syah</button>
+					<button
+						className="bg-primary p-1 rounded-xl hover:bg-secondary self-stretch duration-500"
+						onClick={() => {
+							window.location.href = "/files/CV_Firyan_Syah.pdf";
+						}}
+					>
+						View my CV
+					</button>
 				</div>
 			</div>
 		</div>
