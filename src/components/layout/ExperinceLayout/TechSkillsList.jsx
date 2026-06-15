@@ -16,7 +16,7 @@ export default function TechSkillsList() {
 					<div key={catIndex} className="flex flex-col text-base items-center  w-60 md:w-49 text-center font-semibold ">
 						<div className="w-px h-4 bg-linear-to-b from-transparent via-accent to-transparent relative  my-0 lg:my-3 opacity-0 lg:opacity-100 " />
 
-						<div className="bg-panel/90 w-full hover:bg-panel-hover cursor-pointer shadow-[0px_0px_2px_1px_#ffffff] duration-500 py-3 ">
+						<div className="bg-panel/90 w-full hover:bg-panel-hover cursor-pointer outline-1 shadow-[0px_0px_8px_#ffffff] duration-500 py-3 ">
 							<i className={category.icon}></i> {category.category}
 						</div>
 

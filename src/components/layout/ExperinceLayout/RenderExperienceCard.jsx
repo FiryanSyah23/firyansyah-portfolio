@@ -7,7 +7,7 @@ export default function RenderExperienceCard() {
 			{dataExperience.map((item, index) => (
 				<div
 					key={index}
-					className=" w-85 flex flex-col items-center  gap-3  text-center bg-panel p-5 text-white rounded-xl shadow-[0px_0px_2px_1px_#ffffff] "
+					className=" w-85 flex flex-col items-center  gap-3  text-center bg-panel p-5 text-white rounded-xl outline-1 shadow-[0px_0px_8px_#ffffff]"
 				>
 					<div className=" h-auto outline outline-white rounded-full overflow-hidden p-5 bg-white ">
 						<Image src={item.img} alt={item.company} width={500} height={500} className="w-30 h-auto " priority={true} />
