@@ -35,11 +35,11 @@ export default function Experience() {
 	return (
 		<section id="experience" className="pt-30 w-full -scroll-mt-50 ">
 			<div className="expe-content px-8 container mx-auto">
-				<h2 className="expe-title text-white font-semibold text-xl ">|My Programming Journey</h2>
-
+				<h1 className="expe-title text-accent/75 font-semibold text-2xl ">| My Programming Journey</h1>
+				<h2 className="text-white font-semibold text-center text-xl mt-10">Experince and Training</h2>
 				<RenderExperienceCard />
 			</div>
-			<div className="expe-skills pt-60 container mx-auto">
+			<div className="px-8 pt-20 container mx-auto">
 				<div className="flex justify-center flex-col px-8">
 					<h2 className="expe-title text-white font-semibold text-center text-xl">Programming Languages & Tools </h2>
 					<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
