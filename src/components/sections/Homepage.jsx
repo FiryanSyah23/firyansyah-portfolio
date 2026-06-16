@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Homepage() {
 	return (
-		<section id="home" className="lg:py-22 py-20 scroll-mt-20 h-screen flex items-center">
+		<section id="home" className="lg:py-22 py-20 scroll-mt-20 min-h-screen min-h-dvh flex items-center">
 			<div className="container mx-auto px-4 ">
 				<div className="grid lg:grid-cols-2 grid-cols-1  text-white">
 					<div className="main-header title flex justify-center  sm:text-start text-center flex-col gap-3  ">

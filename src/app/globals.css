@@ -141,4 +141,8 @@
 		box-sizing: border-box;
 		overflow-x: hidden;
 	}
+	body {
+		min-height: 100vh;
+		min-height: 100dvh; /* dvh = Dynamic Viewport Height */
+	}
 }
