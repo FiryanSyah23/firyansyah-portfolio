@@ -5,7 +5,7 @@ export default function sitemap() {
 			lastModified: new Date(),
 		},
 		{
-			url: "https://firyansyah-portfolio.vercel.app/projects",
+			url: "https://firyansyah-portfolio.vercel.app/project",
 			lastModified: new Date(),
 		},
 	];

@@ -16,8 +16,8 @@ export default function Projects() {
 		<section id="projects" className="px-8 pt-20 container mx-auto">
 			<h1 className="text-accent/75 font-semibold text-2xl">| Things I&apos;ve Created</h1>
 
-			<div className="flex justify-center py-20 flex-wrap gap-10">
-				{dataProjects.map((item, index) => (
+			<div className="flex justify-center py-20 flex-wrap gap-10 select-none">
+				{dataProjects.slice(0, 8).map((item, index) => (
 					<div key={index} className={cardHeader}>
 						<div className="overflow-hidden rounded-lg ">
 							<Image
@@ -52,19 +52,28 @@ export default function Projects() {
 								onClick={() => {
 									window.open(item.demo, "_blank", "noopener,noreferrer");
 								}}
-								className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md duration-300 outline-1  w-full ${!item.demo ? "hidden" : ""} `}
+								className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md duration-600 outline-1  w-full ${!item.demo ? "hidden" : ""} `}
 							>
 								View Project
 							</button>
 							<Link
 								href={`project/${item.slug}`}
-								className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md duration-300 outline-1  w-full  `}
+								className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md duration-600 outline-1  w-full  `}
 							>
 								View Detail Project
 							</Link>
 						</div>
 					</div>
 				))}
+			</div>
+			<div className={` flex justify-center pb-10  ${dataProjects.length < 8 ? "hidden" : ""} `}>
+				<Link
+					href={"/project"}
+					scroll={false}
+					className={`bg-primary/75 hover:bg-secondary text-white text-xl text-center p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
+				>
+					See more
+				</Link>
 			</div>
 		</section>
 	);
