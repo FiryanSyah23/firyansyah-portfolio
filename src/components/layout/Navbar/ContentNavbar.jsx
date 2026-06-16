@@ -1,15 +1,16 @@
 import Image from "next/image";
 import SosmedLogoLink from "./SosmedLogoLink";
 import SectionsLink from "./SectionsLink";
+import Link from "next/link";
 
 export default function ContentNavbar({ setMenu }) {
 	return (
 		<div className="flex justify-between items-center px-8 ">
 			<div className="nav-title flex gap-2 items-center">
 				<Image src={"/FIROCTASYS.png"} alt="LOGOPAGE" width={200} height={200} className="w-8 h-auto" />
-				<a href="#">
+				<Link href="/">
 					<h1 className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FIRYAN </h1>
-				</a>
+				</Link>
 			</div>
 
 			<div className="group-action-link flex items-center gap-5">

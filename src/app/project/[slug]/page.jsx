@@ -1,8 +1,8 @@
 import dataProjects from "@/data/projects";
-import React from "react";
+import React, { use } from "react";
 
 export default function ViewProject({ params }) {
-	const { slug } = params;
+	const { slug } = use(params);
 	const project = dataProjects.find((item) => item.slug === slug);
 
 	if (!project) return <div>Project not found</div>;
