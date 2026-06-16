@@ -92,23 +92,16 @@ const dataSkills = [
 		icon: "ri-cpu-line",
 		items: [
 			{
-				name: "Arduino",
-				logo: "/logo/arduino.png",
-				description: "Developing microcontroller and Internet of Things projects.",
-				projectCount: 0,
-				experienceYear: 2,
-			},
-			{
 				name: "C++",
 				logo: "/logo/c++.png",
-				description: "Programming embedded systems and high-performance applications.",
+				description: "Language for writing efficient embedded logic and controlling hardware directly.",
 				projectCount: 0,
 				experienceYear: 2,
 			},
 			{
 				name: "Python",
 				logo: "/logo/python.png",
-				description: "Creating automation and IoT integration solutions.",
+				description: "Language for data processing, device communication, and crate task microcontroler",
 				projectCount: 0,
 				experienceYear: 1,
 			},
@@ -142,6 +135,11 @@ const dataSkills = [
 				name: "Vite",
 				logo: "/logo/vite.png",
 				description: "Using modern build tools for fast frontend development.",
+			},
+			{
+				name: "Arduino IDE",
+				logo: "/logo/arduino.png",
+				description: "Application for building code systems to create task for microcontroler",
 			},
 		],
 	},

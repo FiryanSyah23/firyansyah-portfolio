@@ -16,17 +16,14 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 								<p className="text-sm">{tech.name}</p>
 							</div>
 
-							<div className={`${hoverList ? "opacity-100 delay-150 duration-2500 ease-in-out" : "opacity-0"}`}>
+							<div className={`${hoverList ? "opacity-100  " : "opacity-0"} duration-2500 ease-in-out delay-150`}>
 								<div className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"}`}>
 									<p className={`text-white text-xs`}>{tech.description}</p>
 								</div>
 							</div>
 
-							<div className={`${hoverList ? "opacity-100 delay-150 duration-2500  ease-in-out" : "opacity-0"}`}>
-								<div
-									className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"} 
-													`}
-								>
+							<div className={`${hoverList ? "opacity-100 " : "opacity-0"} delay-150 duration-2500 ease-in-out`}>
+								<div className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"}`}>
 									<div className="flex justify-between pt-2  text-secondary text-xs">
 										{tech.experienceYear === undefined ? (
 											" "
