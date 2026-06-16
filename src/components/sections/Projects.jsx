@@ -26,7 +26,6 @@ export default function Projects() {
 								width={500}
 								height={500}
 								className="object-cover h-50 w-121 duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
-								priority={true}
 							/>
 						</div>
 
@@ -52,13 +51,13 @@ export default function Projects() {
 								onClick={() => {
 									window.open(item.demo, "_blank", "noopener,noreferrer");
 								}}
-								className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md duration-600 outline-1  w-full ${!item.demo ? "hidden" : ""} `}
+								className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md  outline-2 hover:outline-offset-5  w-full  ${!item.demo ? "hidden" : ""} `}
 							>
 								View Project
 							</button>
 							<Link
 								href={`project/${item.slug}`}
-								className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md duration-600 outline-1  w-full  `}
+								className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md  outline-2 hover:outline-offset-5  w-full  `}
 							>
 								View Detail Project
 							</Link>

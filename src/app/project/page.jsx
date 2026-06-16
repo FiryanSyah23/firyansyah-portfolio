@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ProjectPage() {
 	return (
-		<div className="min-h-screen min-h-dvh container flex justify-center items-center flex-col gap-10">
+		<div className="h-dvh container flex justify-center items-center flex-col gap-10">
 			<h1 className="text-warning font-bold text-5xl">Coming Soon</h1>
 			<Link
 				href={"/"}

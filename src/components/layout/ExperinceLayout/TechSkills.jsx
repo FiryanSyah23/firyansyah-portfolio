@@ -81,7 +81,7 @@ export default function TechSkills() {
 									height={50}
 									alt={item.name}
 									className={`h-auto md:w-5 w-4 ${expand?.name === item.name ? "md:w-10" : ""}`}
-									priority={true}
+									
 								/>
 								<p className="text-text md:text-lg text-sm">{item.name}</p>
 								<div className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}   transition-all duration-3000`}>

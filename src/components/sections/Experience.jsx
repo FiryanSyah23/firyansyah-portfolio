@@ -33,7 +33,7 @@ export default function Experience() {
 	}, [changeStyle]);
 
 	return (
-		<section id="experience" className="pt-30 w-full -scroll-mt-50 ">
+		<section id="experience" className="w-full -scroll-mt-50 ">
 			<div className="expe-content px-8 container mx-auto">
 				<h1 className="expe-title text-accent/75 font-semibold text-2xl ">| My Programming Journey</h1>
 				<h2 className="text-white font-semibold text-center text-xl mt-10">Experince and Training</h2>
