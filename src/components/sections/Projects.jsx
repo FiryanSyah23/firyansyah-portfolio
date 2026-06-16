@@ -42,12 +42,12 @@ export default function Projects() {
 							</div>
 							<div className="overflow-hidden h-30 ">
 								<p className="text-base/tight text-muted  group-hover:text-white group-active:text-white duration-1000 pb-3 text-justify">
-									{item.description.split(" ").length > 40 ? item.description.split(" ").slice(0, 40).join(" ") + " ..." : item.description}
+									{item.description.split(" ").length > 30 ? item.description.split(" ").slice(0, 30).join(" ") + " ..." : item.description}
 								</p>
 							</div>
 						</div>
 
-						<div className="flex justify-between gap-3">
+						<div className="flex justify-between gap-3 text-sm sm:text-base">
 							<button
 								onClick={() => {
 									window.open(item.demo, "_blank", "noopener,noreferrer");
