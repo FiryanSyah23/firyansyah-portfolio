@@ -46,10 +46,10 @@ function buildSkillRows() {
 
 const skillHeader = (row, expand, item) =>
 	cn(
-		` px-4 py-2 flex justify-center gap-2 items-center absolute hover:[animation-play-state:paused]   `,
-		`hover:rounded-ee-4xl active:[animation-play-state:paused]`,
+		` px-4 py-2 flex justify-center gap-2 items-center absolute hover:[animation-play-state:paused] active:[animation-play-state:paused]  `,
+		`hover:rounded-ee-4xl active:[animation-play-state:paused] active:bg-panel-hover`,
 		`hover:rounded-ss-4xl rounded-ss-4xl rounded-ee-4xl shadow-[0px_0px_2px_2px_rgb(255,255,255)] transition-all duration-1000 `,
-		`${row.direction} ${expand?.name === item.name ? "bg-panel-hover" : "bg-panel/90"} `,
+		`${row.direction} ${expand?.name === item.name ? "bg-panel-hover " : "bg-panel/90"} `,
 		`${expand?.name === item.name && expand?.key !== "Tools" ? "z-50 w-56 h-45 flex-col " : "h-10"}`,
 		`${expand?.key === "Tools" && expand?.name === item.name ? "flex-col h-37 w-56 " : ""}`,
 	);
@@ -81,7 +81,6 @@ export default function TechSkills() {
 									height={50}
 									alt={item.name}
 									className={`h-auto md:w-5 w-4 ${expand?.name === item.name ? "md:w-10" : ""}`}
-									
 								/>
 								<p className="text-text md:text-lg text-sm">{item.name}</p>
 								<div className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}   transition-all duration-3000`}>

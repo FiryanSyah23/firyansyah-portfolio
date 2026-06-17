@@ -1,14 +1,17 @@
+// src/app/project/[slug]/page.jsx
 import dataProjects from "@/data/projects";
-import React, { use } from "react";
+import ViewProject from "../../../components/layout/Projects/ViewProject";
 
-export default function ViewProject({ params }) {
-	const { slug } = use(params);
+export async function generateMetadata({ params }) {
+	const { slug } = await params;
 	const project = dataProjects.find((item) => item.slug === slug);
 
-	if (!project) return <div>Project not found</div>;
-	return (
-		<div className="container mx-auto h-dvh flex justify-center items-center">
-			<p className="text-9xl text-center text-white">{project.title}</p>
-		</div>
-	);
+	return {
+		title: project ? `Project-${project.title}` : "Project",
+		description: project?.description ?? "Project detail",
+	};
+}
+
+export default function HomeProject({ params }) {
+	return <ViewProject params={params} />;
 }

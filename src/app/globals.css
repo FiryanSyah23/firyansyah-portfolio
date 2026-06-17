@@ -136,13 +136,8 @@
 		max-width: 100%;
 	}
 	html {
-		scroll-behavior: smooth;
-		scroll-padding-top: 80px;
+	
 		box-sizing: border-box;
 		overflow-x: hidden;
-	}
-	body {
-		min-height: 100vh;
-		min-height: 100dvh; /* dvh = Dynamic Viewport Height */
 	}
 }
