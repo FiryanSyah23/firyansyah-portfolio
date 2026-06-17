@@ -61,8 +61,8 @@ export default function TechSkills() {
 									` px-4 py-2 flex justify-center gap-2 items-center absolute `,
 									`hover:rounded-ee-4xl hover:rounded-ss-4xl rounded-ss-4xl rounded-ee-4xl `,
 									`shadow-[0px_0px_2px_2px_rgb(255,255,255)] transition-all duration-1000 `,
-									`${row.direction} ${expand?.name === item.name ? "bg-panel-hover [animation-play-state:paused]" : "bg-panel/90"} `,
-									`${expand?.name === item.name && expand?.key !== "Tools" ? "z-50 w-56 h-45 flex-col " : "h-10"}`,
+									`${row.direction} ${expand?.name === item.name ? "bg-panel-hover [animation-play-state:paused] z-50 " : "bg-panel/90"} `,
+									`${expand?.name === item.name && expand?.key !== "Tools" ? "w-56 h-45 flex-col " : "h-10"}`,
 									`${expand?.key === "Tools" && expand?.name === item.name ? "flex-col h-37 w-56 " : ""}`,
 								)}
 								style={{
