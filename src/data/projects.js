@@ -5,9 +5,15 @@ const dataProjects = [
 		description:
 			"This application is designed for a solar panel controller. It can monitor and display electrical parameters such as voltage, current, and power.",
 		longDescription:
-			"Built with Python and connected to Arduino via serial communication. The GUI displays real-time data from sensors including voltage, current, and power readings. Used in UIN Ar-Raniry Electrical Engineering Lab as a learning tool for solar energy systems.",
+			"Digital Twins GUI is a real-time monitoring application developed to simulate and visualize the behavior of a solar panel system. The application was built using Python with a custom GUI interface, connected to an Arduino microcontroller via serial communication (UART protocol) to collect live sensor data. It displays key electrical parameters including voltage (V), current (A), and power (W) in real-time with dynamic charts and numerical readouts. The system was designed following the Digital Twin concept — creating a virtual representation of a physical solar panel setup — making it useful for observation, analysis, and academic learning. This project is actively used in the Electrical Engineering Laboratory at UIN Ar-Raniry as an educational tool to help students understand solar energy systems and data acquisition. The firmware was written in C++ for the Arduino side, handling ADC sensor readings and serial data transmission, while Python handled data parsing, processing, and GUI rendering.",
 		tech: ["Desktop App", "Python", "C++", "Arduino"],
-		image: "/imgProject/digitalTwins.png",
+		image: "/imgProject/digitaltwins/digitalTwins.png",
+		projectImg: [
+			"/imgProject/portFolio.png",
+			"/imgProject/wedLX.png",
+			"/imgProject/digitalTwins.png",
+		],
+
 		demo: null,
 		github: null,
 		status: "Completed",
@@ -18,23 +24,35 @@ const dataProjects = [
 		slug: "wedlx",
 		description: "Modern wedding invitation website with elegant design and interactive features.",
 		longDescription:
-			"A digital wedding invitation website designed to provide a modern and memorable experience for couples and guests. Built with a responsive interface and elegant design, it includes features such as event details, countdown timer, photo gallery, RSVP form, and location maps. The platform allows guests to easily access all important information and share special moments seamlessly across devices.",
+			"WEDLX is a fully responsive digital wedding invitation platform designed to replace traditional printed invitations with a modern, interactive web experience. Built using vanilla JavaScript with a focus on smooth UI interactions, the platform provides couples with an elegant way to share their special day with guests across all devices. Key features include a real-time countdown timer to the wedding date, an interactive photo gallery showcasing the couple's moments, a fully functional RSVP form for guest confirmation, embedded Google Maps for venue location, and a beautiful animated opening sequence for a memorable first impression. The design prioritizes elegance and readability with carefully chosen typography and color palettes. The website is lightweight, fast-loading, and optimized for mobile devices — ensuring guests on smartphones have a seamless experience. This project demonstrates the ability to deliver a polished, client-ready product with attention to both aesthetics and functionality.",
 		tech: ["Website", "Javascript"],
-		image: "/imgProject/wedLX.png",
+		image: "/imgProject/wedlx/wedLX.png",
+		projectImg: [
+			"/imgProject/portFolio.png",
+			"/imgProject/wedLX.png",
+			"/imgProject/digitalTwins.png",
+		],
+
 		demo: "https://firyansyah23.github.io/Wedlx/",
 		github: null,
 		status: "Completed",
 		year: "2025",
 	},
 	{
-		title: "My Portfolio",
-		slug: "my-portfolio",
+		title: "Personal Portfolio",
+		slug: "personal-portfolio",
 		description:
 			"A modern personal portfolio website showcasing my projects, skills, and journey as a developer. Built with a focus on clean UI, smooth interactions, and responsive design.",
 		longDescription:
-			"This portfolio was built from scratch using Next.js App Router and Tailwind CSS. It features smooth animations with Framer Motion, a fully responsive layout, and optimized performance with Next.js Image and metadata configuration.",
+			"This personal portfolio website was built entirely from scratch using Next.js App Router, React, and Tailwind CSS — with a strong focus on performance, accessibility, and modern UI standards. The project serves as a central hub to showcase my technical skills, project work, and professional journey as a developer. Smooth page transitions and micro-interactions were implemented using Framer Motion, giving the site a polished, app-like feel. The layout is fully responsive, optimized for all screen sizes from mobile to large desktop displays. Performance was prioritized through Next.js built-in Image optimization, lazy loading, and proper metadata configuration for SEO. The portfolio features dedicated sections for projects (with detailed case study pages using dynamic routing), a skills overview, about section, and contact form. Each project page dynamically renders content from a centralized data source, making it easy to maintain and scale. The site is deployed on Vercel with automatic CI/CD on every push to the main branch, reflecting real-world deployment practices used in professional environments.",
 		tech: ["Website", "Next.js", "React", "Javascript", "Tailwind CSS"],
-		image: "/imgProject/portFolio.png",
+		image: "/imgProject/portfolio/portFolio.png",
+		projectImg: [
+			"/imgProject/portfolio/portFolio.png",
+			"/imgProject/portfolio/experience.png",
+			"/imgProject/portfolio/skills.png",
+			"/imgProject/portfolio/projects.png",
+		],
 		demo: "https://firyansyah-portfolio.vercel.app",
 		github: "https://github.com/FiryanSyah23",
 		status: "Completed",

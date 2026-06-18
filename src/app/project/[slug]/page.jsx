@@ -1,6 +1,6 @@
 // src/app/project/[slug]/page.jsx
 import dataProjects from "@/data/projects";
-import ViewProject from "../../../components/layout/Projects/ViewProject";
+import ViewProject from "../../../components/layout/ViewProject/ViewProject";
 
 export async function generateMetadata({ params }) {
 	const { slug } = await params;

@@ -3,6 +3,7 @@ import dataProjects from "@/data/projects";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import DemoButton from "../ui/DemoButton";
+import Badge from "../ui/Badge";
 
 const cardHeader = cn(
 	" w-90  flex flex-col justify-between gap-3 bg-panel text-white rounded-lg overflow-hidden p-3 gap-5 ",
@@ -10,7 +11,6 @@ const cardHeader = cn(
 	"hover:shadow-[0px_0px_8px_#ffffff]  hover:-translate-y-2 hover:bg-panel-hover duration-1000 group ",
 	"active:shadow-[0px_0px_8px_#ffffff]  active:-translate-y-2 active:bg-panel-hover delay-120",
 );
-const badge = cn("text-xs font-semibold  p-2 text-nowrap text-center bg-secondary rounded-sm first:bg-gray-700/75");
 
 export default function Projects() {
 	return (
@@ -34,9 +34,7 @@ export default function Projects() {
 							<h3 className="text-2xl font-bold mb-1 ">{item.title}</h3>
 							<div className="flex items-center gap-3 flex-wrap pb-3">
 								{item.tech.slice(0, 4).map((tech, index) => (
-									<div key={index} className={badge}>
-										{tech}
-									</div>
+									<Badge key={index}>{tech}</Badge>
 								))}
 								{item.tech.length > 4 && <div className="bg-gray-700/75 text-xs text-center p-2 rounded-sm font-semibold">+{item.tech.length - 4}</div>}
 							</div>
