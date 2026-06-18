@@ -1,8 +1,8 @@
 "use client";
-import dataSkills from "@/data/skills";
 import { useState } from "react";
 import RenderTechList from "./RenderTechList";
- import dataSkillsWithCount from "@/lib/dataUpdateSkill";
+import dataSkillsWithCount from "@/lib/dataUpdateSkill";
+
 export default function TechSkillsList({ data }) {
 	const [expandList, setExpandList] = useState(null);
 
