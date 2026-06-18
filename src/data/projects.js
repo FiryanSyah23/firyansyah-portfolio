@@ -13,9 +13,7 @@ const dataProjects = [
 			"/imgProject/wedLX.png",
 			"/imgProject/digitalTwins.png",
 		],
-
 		demo: null,
-		github: null,
 		status: "Completed",
 		year: "2025",
 	},
@@ -32,9 +30,7 @@ const dataProjects = [
 			"/imgProject/wedLX.png",
 			"/imgProject/digitalTwins.png",
 		],
-
 		demo: "https://firyansyah23.github.io/Wedlx/",
-		github: null,
 		status: "Completed",
 		year: "2025",
 	},
@@ -54,7 +50,6 @@ const dataProjects = [
 			"/imgProject/portfolio/projects.png",
 		],
 		demo: "https://firyansyah-portfolio.vercel.app",
-		github: "https://github.com/FiryanSyah23",
 		status: "Completed",
 		year: "2025",
 	},

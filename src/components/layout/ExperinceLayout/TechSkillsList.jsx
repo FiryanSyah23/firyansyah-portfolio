@@ -2,8 +2,8 @@
 import dataSkills from "@/data/skills";
 import { useState } from "react";
 import RenderTechList from "./RenderTechList";
-
-export default function TechSkillsList() {
+ import dataSkillsWithCount from "@/lib/dataUpdateSkill";
+export default function TechSkillsList({ data }) {
 	const [expandList, setExpandList] = useState(null);
 
 	return (
@@ -12,8 +12,11 @@ export default function TechSkillsList() {
 				<div className="w-300 h-px bg-linear-to-l from-transparent via-accent to-transparent relative  " />
 			</div>
 			<div className="techlist flex flex-wrap justify-center gap-10 ">
-				{dataSkills.map((category, catIndex) => (
-					<div key={catIndex} className="flex flex-col text-base items-center  w-60 md:w-49 text-center font-semibold ">
+				{dataSkillsWithCount.map((category, catIndex) => (
+					<div
+						key={catIndex}
+						className="flex flex-col text-base items-center  w-60 md:w-49 text-center font-semibold "
+					>
 						<div className="w-px h-4 bg-linear-to-b from-transparent via-accent to-transparent relative  my-0 lg:my-3 opacity-0 lg:opacity-100 " />
 
 						<div className="bg-panel/90 w-full hover:bg-panel-hover cursor-pointer outline-1 shadow-[0px_0px_8px_#ffffff] duration-500 py-3 ">
@@ -28,4 +31,3 @@ export default function TechSkillsList() {
 		</div>
 	);
 }
-

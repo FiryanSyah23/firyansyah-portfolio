@@ -34,7 +34,7 @@ export default function InfoProject({ project }) {
 									? "hidden"
 									: " bg-secondary p-1 font-bold rounded-lg outline-2 hover:outline-offset-3 active:outline-offset-3 max-md:w-full"
 							}
-							onClick={() => window.open("")}
+							onClick={() => window.open(project.demo)}
 						>
 							See Website
 						</button>

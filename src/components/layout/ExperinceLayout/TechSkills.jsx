@@ -4,6 +4,7 @@ import dataSkills from "@/data/skills";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
+import dataSkillsWithCount from "@/lib/dataUpdateSkill";
 
 const generateShuffledDelays = (count, duration) => {
 	const delays = Array.from({ length: count }, (_, i) => -((i / count) * duration));
@@ -26,7 +27,7 @@ function buildSkillRows() {
 	];
 
 	return categories.map(({ key, direction }) => {
-		const findCategory = dataSkills.find((item) => item.category === key);
+		const findCategory = dataSkillsWithCount.find((item) => item.category === key);
 		const items = [...(findCategory?.items || [])];
 		const total = items.length;
 		const duration = total * 6;
@@ -80,7 +81,9 @@ export default function TechSkills() {
 									className={`h-auto md:w-5 w-4 ${expand?.name === item.name ? "md:w-10" : ""}`}
 								/>
 								<p className="text-text md:text-lg text-sm">{item.name}</p>
-								<div className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}   transition-all duration-3000`}>
+								<div
+									className={`${expand?.name === item.name ? "opacity-100" : "opacity-0  overflow-hidden"}   transition-all duration-3000`}
+								>
 									<div className={`${expand?.name === item.name ? "" : "hidden"}  `}>
 										<p className="description text-sm/tight text-muted  text-center">{item.description}</p>
 										<div className="experience flex justify-between mt-2 text-secondary capitalize font-semibold text-xs">

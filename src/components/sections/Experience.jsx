@@ -31,6 +31,7 @@ export default function Experience() {
 	useEffect(() => {
 		localStorage.setItem("changeStyle", JSON.stringify(changeStyle));
 	}, [changeStyle]);
+	
 
 	return (
 		<section id="experience" className="w-full  ">
@@ -41,10 +42,13 @@ export default function Experience() {
 			</div>
 			<div className="px-8 pt-20 container mx-auto">
 				<div className="flex justify-center flex-col px-8">
-					<h3 className="expe-title text-white font-semibold text-center text-xl">Programming Languages & Tools </h3>
+					<h3 className="expe-title text-white font-semibold text-center text-xl">
+						Programming Languages & Tools{" "}
+					</h3>
 					<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
-						These are the technologies and tools I work with daily, backed by years of experience building fast, interactive web applications, and
-						developing IoT systems that connect the digital world with the physical one.
+						These are the technologies and tools I work with daily, backed by years of experience building
+						fast, interactive web applications, and developing IoT systems that connect the digital world
+						with the physical one.
 					</p>
 					<div className="flex justify-end mt-2 ">
 						<button
