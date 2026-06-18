@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import SosmedLogoLink from "../Navbar/SosmedLogoLink";
+import SosmedLogoLink from "../../ui/SosmedLogoLink";
 
 export default function NavbarProject() {
 	const [menu, setMenu] = useState(false);

@@ -1,5 +1,5 @@
-import SectionsLink from "./SectionsLink";
-import SosmedLogoLink from "./SosmedLogoLink";
+import SectionsLink from "../../ui/SectionsLink";
+import SosmedLogoLink from "../../ui/SosmedLogoLink";
 
 export default function MenuCardPanel({ menu, setMenu }) {
 	return (

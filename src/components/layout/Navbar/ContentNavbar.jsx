@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SosmedLogoLink from "./SosmedLogoLink";
-import SectionsLink from "./SectionsLink";
+import SosmedLogoLink from "../../ui/SosmedLogoLink";
+import SectionsLink from "../../ui/SectionsLink";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
