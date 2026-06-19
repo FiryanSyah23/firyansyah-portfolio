@@ -34,7 +34,7 @@ export default function LogoLinkDetail() {
 				className="group flex items-center gap-2"
 			>
 				<i className="ri-whatsapp-line text-secondary group-hover:text-white"></i>
-				<span>Firyan Syah</span>
+				<span>085135886173</span>
 			</a>
 
 			<a

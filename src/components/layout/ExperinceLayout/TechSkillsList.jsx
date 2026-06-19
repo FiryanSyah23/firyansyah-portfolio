@@ -7,7 +7,7 @@ export default function TechSkillsList({ data }) {
 	const [expandList, setExpandList] = useState(null);
 
 	return (
-		<div className="container mx-auto text-white mt-5 xl:h-140 pb-10">
+		<div id="skillExperience" className="container mx-auto text-white mt-5 xl:h-140 pb-10">
 			<div className="flex justify-center relative">
 				<div className="w-300 h-px bg-linear-to-l from-transparent via-accent to-transparent relative  " />
 			</div>

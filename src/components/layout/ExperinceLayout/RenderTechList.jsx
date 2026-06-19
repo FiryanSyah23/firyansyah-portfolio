@@ -1,10 +1,15 @@
+import { cn } from "@/lib/utils";
+import getExperienceDuration from "@/lib/utils/countDateExperience";
 import Image from "next/image";
 
 export default function RenderTechList({ category, setExpandList, expandList }) {
+	
+
 	return (
 		<div className="flex flex-col gap-4 w-full">
 			{category.items.map((tech, techIndex) => {
 				const hoverList = expandList?.name === tech.name;
+				const duration = tech.startDate ? getExperienceDuration(tech.startDate) : null;
 
 				return (
 					<div
@@ -13,7 +18,13 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 						onMouseLeave={() => setExpandList(null)}
 					>
 						<div
-							className={`text-muted hover:text-white  hover: cursor-pointer outline-1 shadow-[0px_0px_5px_#ffffff] duration-700 delay-200 p-2 flex flex-col p-2 h-11 justify-between ${hoverList ? " bg-panel-hover  shadow-[0px_0px_8px_#ffffff] " : "bg-panel/80  shadow-[0px_0px_5px_#ffffff] "} ${hoverList && category.category !== "Tools" ? "h-31" : ""} ${hoverList && category.category === "Tools" ? "h-26 " : ""} `}
+							className={cn(
+								`text-muted hover:text-white  hover: cursor-pointer outline-1 shadow-[0px_0px_5px_#ffffff]`,
+								` duration-700 delay-200 p-2 flex flex-col p-2 h-11 justify-between  `,
+								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_8px_#ffffff] " : "bg-panel/80  shadow-[0px_0px_5px_#ffffff] "}`,
+								`${hoverList && category.category !== "Tools" ? "h-31" : ""}  `,
+								`${hoverList && category.category === "Tools" ? "h-26 " : ""}`,
+							)}
 						>
 							<div className={`flex justify-center items-center gap-2 `}>
 								<Image src={tech.logo} alt={tech.name} width={50} height={50} className="w-7 h-auto" />
@@ -36,21 +47,20 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 								<div
 									className={`flex flex-col justify-between  ${category.category === "Tools" ? "hidden" : ""} ${hoverList ? "" : "hidden"}`}
 								>
-									<div className="flex justify-between pt-2  text-secondary text-xs">
-										{tech.experienceYear === undefined ? (
-											" "
-										) : (
-											<span className="flex gap-1 items-center ">
+									<div className="flex justify-between pt-2 text-secondary text-xs">
+										{duration && (
+											<span className="flex gap-1 items-center">
 												<i className="ri-calendar-fill"></i>
-												<p className="">&plusmn;{tech.experienceYear} Years</p>
+												<p>
+													&plusmn;{duration.value} {duration.unit}
+												</p>
 											</span>
 										)}
-										{tech.projectCount === undefined ? (
-											" "
-										) : (
-											<span className="flex gap-1">
+
+										{tech.projectCount !== undefined && tech.projectCount >= 1 && (
+											<span className="flex gap-1 items-center">
 												<i className="ri-folders-line"></i>
-												<p className={tech.projectCount < 1 ? "hidden" : ""}>{tech.projectCount} Projects</p>
+												<p>{tech.projectCount} Projects</p>
 											</span>
 										)}
 									</div>
