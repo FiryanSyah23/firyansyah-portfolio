@@ -14,7 +14,7 @@ const cardHeader = cn(
 
 export default function Projects() {
 	return (
-		<section id="projects" className="px-8 pt-20 container mx-auto">
+		<section id="projects" className="px-8 pt-20 container mx-auto scroll-mt-40">
 			<h2 className="text-accent/75 font-semibold text-2xl">| Things I&apos;ve Created</h2>
 
 			<div className="flex justify-center py-20 flex-wrap gap-10 select-none">

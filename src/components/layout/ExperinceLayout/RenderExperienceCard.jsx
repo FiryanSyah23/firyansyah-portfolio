@@ -21,6 +21,14 @@ export default function RenderExperienceCard() {
 						<p className="text-lg/tight font-semibold text-accent ">{item.company}</p>
 						<p className=" mt-3">{item.period}</p>
 						<p>{item.location}</p>
+						<h3 className="mt-2 text-start">Achievements:</h3>
+						<ul className="text-start list-inside list-disc">
+							{item.achievements.map((item, index) => (
+								<li key={index} className="">
+									{item}
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
 			))}

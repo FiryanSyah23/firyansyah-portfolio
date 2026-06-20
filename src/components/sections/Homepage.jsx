@@ -12,14 +12,11 @@ export default function Homepage() {
 						</h1>
 						<p className="max-md:text-5xl/tight sm:text-7xl md:text-6xl xl:text-8xl tracking-tight">
 							Let&apos;s <span className="text-accent font-bold">Bring</span> <br /> Your{" "}
-							<span className="text-accent font-bold">Ideas</span> to Life.
+							<span className="text-accent font-bold">Ideas</span> to Life
 						</p>
 						<p className="md:text-base/relaxed sm:text-base/relaxed max-md:text-sm/relaxed xl:text-lg/relaxed text-muted mt-2 ">
-							I enjoy building websites, mobile applications, and embedded systems that are both functional
-							and engaging. With a background in Electrical Engineering and hands-on experience in IoT
-							automation and hardware control, I use technologies such as JavaScript, Node.js, React, React
-							Native, Python, and C/C++ to continuously learn and create solutions — from web interfaces to
-							real-world hardware systems.
+							I build web applications, mobile apps, embedded & IoT systems — bridging the gap between
+							software and hardware. Always learning, always shipping.
 						</p>
 					</div>
 					<div className="logo lg:justify-end m-5 lg:m-0 justify-center flex items-center rounded-full row-1 lg:col-2">

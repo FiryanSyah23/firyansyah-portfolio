@@ -14,6 +14,7 @@ export default function SectionsLink() {
 	return (
 		<>
 			<button onClick={(e) => scroolToSection(e, "home")}>Home</button>
+			<button onClick={(e) => scroolToSection(e, "about")}>About</button>
 			<button onClick={(e) => scroolToSection(e, "experience")}>Experience</button>
 			<button onClick={(e) => scroolToSection(e, "projects")}>Projects</button>
 		</>

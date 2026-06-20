@@ -4,7 +4,7 @@ import SosmedLogoLink from "../../ui/SosmedLogoLink";
 export default function MenuCardPanel({ menu, setMenu }) {
 	return (
 		<div
-			className={`absolute md:hidden bg-panel/98 ${menu ? "top-20 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
+			className={`absolute lg:hidden bg-panel/98 ${menu ? "top-20 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
 			onClick={() => setMenu(false)}
 		>
 			<div className="flex flex-col gap-2">

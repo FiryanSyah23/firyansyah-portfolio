@@ -24,13 +24,13 @@ export default function Experience() {
 	}, [changeStyle]);
 
 	return (
-		<section id="experience" className="w-full  ">
+		<section id="experience" className="w-full scroll-mt-40  ">
 			<div className="expe-content px-8 container mx-auto">
 				<h2 className="expe-title text-accent/75 font-semibold text-2xl ">| My Programming Journey</h2>
 				<h3 className="text-white font-semibold text-center text-xl mt-10">Experience and Training</h3>
 				<RenderExperienceCard />
 			</div>
-			<div className="px-8 pt-20 container mx-auto">
+			<div id="skillExperience" className="px-8 pt-20 container mx-auto">
 				<div className="flex justify-center flex-col px-8">
 					<h3 className="expe-title text-white font-semibold text-center text-xl">
 						Programming Languages & Tools{" "}
@@ -41,8 +41,8 @@ export default function Experience() {
 						with the physical one.
 					</p>
 				</div>
+				<TechSkillsList />
 			</div>
-			<TechSkillsList/>
 		</section>
 	);
 }

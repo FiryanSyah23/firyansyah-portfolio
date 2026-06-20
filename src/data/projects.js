@@ -6,7 +6,7 @@ const dataProjects = [
 			"This application is designed for a solar panel controller. It can monitor and display electrical parameters such as voltage, current, and power.",
 		longDescription:
 			"Digital Twins GUI is a real-time monitoring application developed to simulate and visualize the behavior of a solar panel system. The application was built using Python with a custom GUI interface, connected to an Arduino microcontroller via serial communication (UART protocol) to collect live sensor data. It displays key electrical parameters including voltage (V), current (A), and power (W) in real-time with dynamic charts and numerical readouts. The system was designed following the Digital Twin concept — creating a virtual representation of a physical solar panel setup — making it useful for observation, analysis, and academic learning. This project is actively used in the Electrical Engineering Laboratory at UIN Ar-Raniry as an educational tool to help students understand solar energy systems and data acquisition. The firmware was written in C++ for the Arduino side, handling ADC sensor readings and serial data transmission, while Python handled data parsing, processing, and GUI rendering.",
-		tech: ["Desktop App", "Python", "C++", "Arduino"],
+		tech: ["Desktop App", "Python", "Arduino"],
 		image: "/imgProject/digitaltwins/digitalTwins.png",
 		projectImg: [
 			"/imgProject/portFolio.png",

@@ -3,8 +3,6 @@ import getExperienceDuration from "@/lib/utils/countDateExperience";
 import Image from "next/image";
 
 export default function RenderTechList({ category, setExpandList, expandList }) {
-	
-
 	return (
 		<div className="flex flex-col gap-4 w-full">
 			{category.items.map((tech, techIndex) => {
@@ -19,9 +17,9 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 					>
 						<div
 							className={cn(
-								`text-muted hover:text-white  hover: cursor-pointer outline-1 shadow-[0px_0px_5px_#ffffff]`,
+								`text-muted hover:text-white  hover: cursor-pointer outline-1 `,
 								` duration-700 delay-200 p-2 flex flex-col p-2 h-11 justify-between  `,
-								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_8px_#ffffff] " : "bg-panel/80  shadow-[0px_0px_5px_#ffffff] "}`,
+								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] " : "bg-panel/80"}`,
 								`${hoverList && category.category !== "Tools" ? "h-31" : ""}  `,
 								`${hoverList && category.category === "Tools" ? "h-26 " : ""}`,
 							)}
@@ -44,9 +42,7 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 							<div
 								className={`${hoverList ? "opacity-100 " : "opacity-0"} delay-150 duration-2500 ease-in-out`}
 							>
-								<div
-									className={`flex flex-col justify-between  ${category.category === "Tools" ? "hidden" : ""} ${hoverList ? "" : "hidden"}`}
-								>
+								<div className={`flex flex-col justify-between ${hoverList ? "" : "hidden"}`}>
 									<div className="flex justify-between pt-2 text-secondary text-xs">
 										{duration && (
 											<span className="flex gap-1 items-center">

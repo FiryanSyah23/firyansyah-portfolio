@@ -12,7 +12,7 @@ export default function NavbarProject() {
 				<div className="flex justify-between items-center px-8 ">
 					<div className="nav-title flex gap-2 items-center">
 						<Image
-							src={"/FIROCTASYS.png"}
+							src={"/FISOCTASYS.png"}
 							alt="LOGOPAGE"
 							width={200}
 							height={200}
