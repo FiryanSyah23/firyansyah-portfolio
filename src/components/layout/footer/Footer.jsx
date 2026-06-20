@@ -9,9 +9,9 @@ const linkListClass = "flex flex-col gap-1 *:p-0.5 *:hover:bg-secondary *:rounde
 export default function Footer() {
 	return (
 		<footer className="w-full bg-black/55 text-white">
-			<div className="container mx-auto py-10 flex gap-10 max-sm:gap-5 flex-wrap [&_h2]:font-bold [&_h3]:font-bold max-sm:[&_h2]:text-3xl max-sm:[&_h3]:text-3xl max-sm:px-2">
+			<div className="container mx-auto py-10 flex gap-10 max-sm:gap-5 flex-wrap [&_h2]:font-bold [&_h3]:font-bold max-sm:[&_h2]:text-3xl max-sm:[&_h3]:text-3xl max-xl:px-8 ">
 				{/* Identity */}
-				<div className="flex flex-col">
+				<div className="flex flex-col max-2xl:grow">
 					<div className="max-sm:w-full mb-1">
 						<h2 className="text-4xl">Firyan Syah</h2>
 						<p className="mb-2">Full-Stack Developer | IoT Enthusiast</p>
@@ -25,7 +25,7 @@ export default function Footer() {
 				</div>
 
 				{/* Section */}
-				<div className="basis-52 max-sm:w-full flex flex-col">
+				<div className="basis-52 max-sm:w-full flex flex-col max-2xl:grow">
 					<h3 className="text-4xl border-b-2 border-b-white mb-2">Navigation</h3>
 					<div className="flex flex-col *:text-start *:p-1 *:w-full *:hover:bg-secondary gap-1 *:rounded-lg">
 						<SectionsLink />
@@ -33,7 +33,7 @@ export default function Footer() {
 				</div>
 
 				{/* Features */}
-				<div className="basis-80 max-sm:w-full">
+				<div className="basis-80 max-sm:w-full max-2xl:grow">
 					<h3 className="text-4xl border-b-2 border-b-white mb-2">Explore</h3>
 					<div className={`${linkListClass} *:w-56`}>
 						<a href="#skillExperience" className="text-left">
@@ -44,7 +44,7 @@ export default function Footer() {
 				</div>
 
 				{/* Address & Status */}
-				<div className="basis-72 max-sm:w-full">
+				<div className="basis-72 max-sm:w-full max-2xl:grow">
 					<h3 className="text-4xl border-b-2 border-b-white mb-2">Address & Status</h3>
 					<div className="flex flex-col gap-3 text-sm text-gray-300">
 						<div className="flex items-center gap-2">

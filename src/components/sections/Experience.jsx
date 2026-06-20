@@ -25,14 +25,12 @@ export default function Experience() {
 
 	return (
 		<section id="experience" className="w-full scroll-mt-40  ">
-			<div className="expe-content px-8 container mx-auto">
-				<h2 className="expe-title text-accent/75 font-semibold text-2xl ">| My Programming Journey</h2>
+			<div className=" px-4 sm:px-8 container mx-auto">
+				<h2 className=" text-accent/75 font-semibold text-2xl ">| My Programming Journey</h2>
 				<h3 className="text-white font-semibold text-center text-xl mt-10">Experience and Training</h3>
 				<RenderExperienceCard />
-			</div>
-			<div id="skillExperience" className="px-8 pt-20 container mx-auto">
-				<div className="flex justify-center flex-col px-8">
-					<h3 className="expe-title text-white font-semibold text-center text-xl">
+				<div className="flex justify-center flex-col pt-20">
+					<h3 className=" text-white font-semibold text-center text-xl">
 						Programming Languages & Tools{" "}
 					</h3>
 					<p className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
@@ -40,8 +38,8 @@ export default function Experience() {
 						fast, interactive web applications, and developing IoT systems that connect the digital world
 						with the physical one.
 					</p>
+					<TechSkillsList />
 				</div>
-				<TechSkillsList />
 			</div>
 		</section>
 	);

@@ -7,7 +7,7 @@ export default function TechSkillsList({ data }) {
 	const [expandList, setExpandList] = useState(null);
 
 	return (
-		<div  className="container mx-auto text-white mt-5 xl:h-140 pb-10">
+		<div className="container mx-auto text-white mt-5 xl:h-140 pb-10">
 			<div className="flex justify-center relative">
 				<div className="w-300 h-px bg-linear-to-l from-transparent via-accent to-transparent relative  " />
 			</div>
@@ -15,7 +15,7 @@ export default function TechSkillsList({ data }) {
 				{dataSkillsWithCount.map((category, catIndex) => (
 					<div
 						key={catIndex}
-						className="flex flex-col text-base items-center  w-60 md:w-49 text-center font-semibold "
+						className="flex flex-col text-base items-center  w-full sm:w-49 text-center font-semibold "
 					>
 						<div className="w-px h-4 bg-linear-to-b from-transparent via-accent to-transparent relative  my-0 lg:my-3 opacity-0 lg:opacity-100 " />
 

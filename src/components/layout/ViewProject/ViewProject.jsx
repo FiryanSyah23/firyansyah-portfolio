@@ -25,9 +25,9 @@ export default function ViewProject({ params }) {
 				>
 					&laquo; Back
 				</button>
-				<div className="flex flex-col p-4 h-full">
+				<div className="flex flex-col sm:p-4 h-full">
 					<SlideShow project={project} />
-					
+
 					<InfoProject project={project} />
 					<p className=" text-justify max-md:indent-10 sm:text-center text-base/relaxed xl:text-lg text-white bg-radial-[at_50%_50%] from-secondary/15 to-transparent to-75%">
 						{project.longDescription}

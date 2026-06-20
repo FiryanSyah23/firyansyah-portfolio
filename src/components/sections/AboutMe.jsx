@@ -15,7 +15,7 @@ export default function AboutMe() {
 
 	return (
 		<section id="about" className="w-full mb-50 scroll-mt-40">
-			<div className="container mx-auto text-white px-8">
+			<div className="container mx-auto text-white sm:px-8 px-4 ">
 				<span className="expe-title text-accent/75 font-semibold text-2xl mb-5 ">| Who I&apos;am</span>
 				<div className="grid grid-cols-[.7fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-15 relative  gap-10 place-items-center">
 					<div className=" *:shadow-[0px_0px_6px_#ffffff] relative ">
