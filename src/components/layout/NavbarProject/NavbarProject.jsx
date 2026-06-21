@@ -23,8 +23,8 @@ export default function NavbarProject() {
 						</Link>
 					</div>
 
-					<div className="group-action-link flex items-center hidden md:flex gap-5">
-						<div className="group-logo-sosmed text-4xl *:hover:text-secondary flex gap-2  ">
+					<div className="hidden md:flex items-center gap-5">
+						<div className=" text-4xl *:hover:text-secondary flex gap-2  ">
 							<SosmedLogoLink />
 						</div>
 						<button

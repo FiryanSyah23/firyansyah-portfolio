@@ -5,28 +5,29 @@ import Link from "next/link";
 import DemoButton from "../ui/DemoButton";
 import Badge from "../ui/Badge";
 
-const cardHeader = cn(
-	" w-90 flex flex-col max-md:flex-col justify-between gap-3 bg-panel text-white rounded-lg overflow-hidden p-3 gap-5 ",
-	"outline-1 shadow-[0px_0px_5px_#ffffff] ",
-	"hover:shadow-[0px_0px_8px_#ffffff]  hover:-translate-y-2 hover:bg-panel-hover duration-1000 group ",
-	"max-lg:w-full max-lg:flex-row ",
-);
-
 export default function Projects() {
 	return (
-		<section id="projects" className="px-4 sm:px-8 pt-20 container mx-auto scroll-mt-40">
+		<section id="projects" className="px-3 lg:px-8 pt-20 container mx-auto scroll-mt-40">
 			<h2 className="text-accent/75 font-semibold text-2xl">| Things I&apos;ve Created</h2>
 
-			<div className="flex justify-center py-20 flex-wrap gap-10 select-none">
+			<div className="flex justify-center py-20 flex-wrap gap-5 select-none">
 				{dataProjects.slice(0, 8).map((item, index) => (
-					<div key={index} className={cardHeader}>
+					<div
+						key={index}
+						className={cn(
+							"sm:w-full md:w-90  max-sm:grow flex flex-col justify-between ",
+							"bg-panel text-white rounded-lg overflow-hidden p-3 gap-5",
+							"outline-1 shadow-[0px_0px_5px_#ffffff] ",
+							"hover:shadow-[0px_0px_8px_#ffffff]  hover:-translate-y-2 hover:bg-panel-hover duration-1000 group ",
+						)}
+					>
 						<div className="overflow-hidden rounded-lg max-lg:shrink-0  ">
 							<Image
 								src={item.image}
-								alt={`${item.title} image project`}
+								alt={`${item.title} project image`}
 								width={2000}
 								height={2000}
-								className="object-cover h-50  max-md:w-121 max-lg:w-90 max-lg:h-full duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
+								className="object-cover h-50  duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
 							/>
 						</div>
 
@@ -45,7 +46,7 @@ export default function Projects() {
 								)}
 							</div>
 
-							<div className="overflow-hidden h-30 ">
+							<div className="overflow-hidden h-30">
 								<p className="text-base/tight text-muted  group-hover:text-white group-active:text-white duration-1000 pb-3 text-justify">
 									{item.description.split(" ").length > 30
 										? item.description.split(" ").slice(0, 30).join(" ") + " ..."

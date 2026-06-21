@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function RenderExperienceCard() {
 	return (
-		<div className="flex justify-center lg:gap-20 gap-10 mt-10 flex-wrap ">
+		<div className="flex justify-center gap-5 mt-10 flex-wrap ">
 			{dataExperience.map((item, index) => (
 				<div
 					key={index}
-					className="w-full sm:w-75 lg:w-90 flex flex-col items-center  gap-3  text-center bg-panel p-5 text-white rounded-xl outline-1 shadow-[0px_0px_4px_#ffffff] "
+					className=" md:basis-85  lg:basis-95 basis-full flex flex-col items-center  gap-3  text-center bg-panel p-5 text-white rounded-xl outline-1 shadow-[0px_0px_4px_#ffffff] "
 				>
 					<div className=" h-auto outline outline-white rounded-full overflow-hidden p-5 bg-white ">
 						<Image
@@ -24,6 +24,7 @@ export default function RenderExperienceCard() {
 					</div>
 
 					<div className="text-sm/tight grow">
+						<span className="font-bold text-accent text-base capitalize">{item.type}</span>
 						<p className="text-lg/tight font-semibold text-accent ">{item.company}</p>
 						<p className=" mt-3">{item.period}</p>
 						<p>{item.location}</p>

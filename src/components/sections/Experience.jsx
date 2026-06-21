@@ -5,11 +5,11 @@ import TechSkillsList from "../layout/ExperinceLayout/TechSkillsList";
 export default function Experience() {
 	return (
 		<section id="experience" className="w-full scroll-mt-40  ">
-			<div className=" px-4 sm:px-8 container mx-auto">
+			<div className="max-sm:px-4 px-8 container mx-auto ">
 				<h2 className=" text-accent/75 font-semibold text-2xl ">| My Programming Journey</h2>
 				<h3 className="text-white font-semibold text-center text-xl mt-10">Experience and Training</h3>
 				<RenderExperienceCard />
-				<div className="flex justify-center flex-col pt-20">
+				<div id="skillExperience" className="flex justify-center flex-col pt-20 scroll-mt-40">
 					<h3 className=" text-white font-semibold text-center text-xl">
 						Programming Languages & Tools{" "}
 					</h3>

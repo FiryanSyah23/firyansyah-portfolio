@@ -1,36 +1,5 @@
 @import "tailwindcss";
 
-:root {
-	/* ===== BRAND COLORS ===== */
-
-	--color-primary: rgb(71, 19, 150); /* Primary Button, Active Menu, Link */
-	--color-secondary: #b13bff; /* Hover, Badge, Accent Element */
-	--color-accent: #ffcc00; /* CTA Highlight, Notification, Important Info */
-	--color-dark: #090040; /* Navbar, Sidebar, Footer, Hero Background */
-
-	/* ===== SURFACE COLORS ===== */
-
-	--color-panel: #14104f; /* Card, Panel, Modal */
-	--color-panel-hover: #1d1666; /* Hover Card */
-	--color-panel-green: rgb(0, 56, 53);
-
-	/* ===== TEXT COLORS ===== */
-	--color-heading: #ffffff; /* Judul */
-	--color-text: #d8d7e8; /* Isi Text */
-	--color-muted: #8f8cb3; /* Text Secondary */
-
-	/* ===== STATUS COLORS ===== */
-
-	--color-success: #22c55e;
-	--color-warning: #ffcc00;
-	--color-danger: #ef4444;
-
-	/* ===== BORDER COLORS ===== */
-
-	--color-border: #2a236d;
-	--color-border-active: rgb(177, 59, 255);
-}
-
 @theme {
 	/* ===== BRAND COLORS ===== */
 
@@ -136,7 +105,6 @@
 		max-width: 100%;
 	}
 	html {
-	
 		box-sizing: border-box;
 		overflow-x: hidden;
 	}

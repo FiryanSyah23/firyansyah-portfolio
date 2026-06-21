@@ -11,7 +11,7 @@ export default function AboutMe() {
 		"Embedded System Enthusiast",
 	];
 
-	const resposiveCard = cn("xl:h-100 xl:w-80 md:h-80 md:w-60 h-70 w-50 ");
+	const resposiveCard = cn("xl:h-100 xl:w-80 md:h-80 md:w-60 h-80 w-60 ");
 
 	return (
 		<section id="about" className="w-full mb-50 scroll-mt-40">
@@ -42,10 +42,10 @@ export default function AboutMe() {
 							</div>
 
 							<div
-								className={`w-100 h-30  bg-panel absolute rotate-20 right-10 xl:top-60 md:top-40 top-30`}
+								className={`w-100 h-30  bg-panel absolute rotate-20 right-10 xl:top-60 md:top-40 top-40`}
 							></div>
 							<div
-								className={`w-100 h-30 bg-panel absolute rotate-160 left-10 xl:top-60 md:top-40 top-30`}
+								className={`w-100 h-30 bg-panel absolute rotate-160 left-10 xl:top-60 md:top-40 top-40`}
 							></div>
 						</div>
 						<div
