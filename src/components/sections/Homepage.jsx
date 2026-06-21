@@ -22,7 +22,7 @@ export default function Homepage() {
 					<div className="logo lg:justify-end m-5 lg:m-0 justify-center flex items-center rounded-full row-1 lg:col-2">
 						<Image
 							src={"/OctaSys.png"}
-							alt="Logo Main Page"
+							alt="FISoctasys brand"
 							width={500}
 							height={500}
 							className="xl:w-140 max-xl:w-110  max-lg:w-25 h-auto"

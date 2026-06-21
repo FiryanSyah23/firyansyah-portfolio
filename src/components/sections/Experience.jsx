@@ -1,28 +1,8 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
 import RenderExperienceCard from "../layout/ExperinceLayout/RenderExperienceCard";
 import TechSkillsList from "../layout/ExperinceLayout/TechSkillsList";
 
 export default function Experience() {
-	const [changeStyle, setChangeStyle] = useState(false);
-
-	useEffect(() => {
-		const saveStyle = async () => {
-			const saveState = localStorage.getItem("changeStyle");
-
-			if (saveState !== null) {
-				setChangeStyle(JSON.parse(saveState));
-			}
-		};
-
-		saveStyle();
-	}, []);
-
-	useEffect(() => {
-		localStorage.setItem("changeStyle", JSON.stringify(changeStyle));
-	}, [changeStyle]);
-
 	return (
 		<section id="experience" className="w-full scroll-mt-40  ">
 			<div className=" px-4 sm:px-8 container mx-auto">

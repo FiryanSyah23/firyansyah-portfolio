@@ -8,7 +8,13 @@ export default function ContentNavbar({ setMenu }) {
 	return (
 		<div className="flex justify-between items-center px-8 ">
 			<div className="nav-title flex gap-2 items-center">
-				<Image src={"/FISOCTASYS.png"} alt="LOGOPAGE" width={200} height={200} className="w-8 h-auto" />
+				<Image
+					src={"/FISOCTASYS.png"}
+					alt="Fisoctasym logo"
+					width={200}
+					height={200}
+					className="w-8 h-auto"
+				/>
 				<Link href="/">
 					<span className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>
 				</Link>

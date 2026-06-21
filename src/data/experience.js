@@ -21,7 +21,7 @@ const dataExperience = [
 		achievements: [
 			"Developed hydroponic automation systems.",
 			"Implemented sensor-based monitoring.",
-			"Sertificate Hidroponic Automation System",
+			"Hydroponic Automation System Certificate",
 		],
 		img: "/LOGOHYFROPONIC.png",
 	},

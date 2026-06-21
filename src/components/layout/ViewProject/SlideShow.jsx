@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, useEffect, useCallback } from "react";
 
-export default function SlideShow({ project }) {
+export default function SlideShow({ project, setFull, full }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [direction, setDirection] = useState(1);
 	const [isPaused, setIsPaused] = useState(false);
@@ -62,19 +62,22 @@ export default function SlideShow({ project }) {
 					animate="center"
 					exit="exit"
 					transition={{ duration: 0.8, ease: [0.83, 0.03, 0.51, 0.99] }}
-					className="absolute inset-0 "
+					className={`absolute inset-0 `}
 				>
 					<Image
 						src={project.projectImg[currentIndex]}
 						alt="slider"
-						fill
-						className="object-cover rounded-lg"
+						height={5000}
+						width={5000}
+						className={`object-cover h-full rounded-lg `}
 						priority={true}
 					/>
 				</motion.div>
 			</AnimatePresence>
 
-			<div className=" justify-between  sm:text-3xl text-2xl items-center h-full w-full top-0 z-2 absolute flex *:w-50">
+			<div
+				className={`${project.projectImg.length < 2 ? " hidden" : ""} justify-between  sm:text-3xl text-2xl items-center h-full w-full top-0 z-2 absolute flex *:w-50 `}
+			>
 				<button onClick={goPrev} className="h-full text-start">
 					<i className="ri-arrow-left-wide-line   p-2 rounded-full bg-secondary/20  m-2"></i>
 				</button>
@@ -83,7 +86,18 @@ export default function SlideShow({ project }) {
 				</button>
 			</div>
 
-			<div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
+			<button
+				className="absolute bottom-1 right-2 max-sm:hidden mix-blend-difference opacity-50 z-100"
+				onClick={() => {
+					setFull(!full);
+				}}
+			>
+				<i className={` ${full ? "ri-fullscreen-exit-line" : "ri-fullscreen-line"} text-3xl`}></i>
+			</button>
+
+			<div
+				className={`absolute bottom-3 left-0 right-0 flex justify-center  gap-2 z-10 ${project.projectImg.length < 2 ? " hidden" : ""}`}
+			>
 				{project.projectImg.map((_, index) => (
 					<button
 						key={index}
@@ -92,8 +106,8 @@ export default function SlideShow({ project }) {
 							setCurrentIndex(index);
 						}}
 						className={cn(
-							"h-2 rounded-full transition-all duration-300",
-							index === currentIndex ? "bg-white w-4" : "bg-white/40 w-2",
+							"h-2 rounded-full transition-all duration-300 ",
+							index === currentIndex ? "bg-secondary w-4" : "bg-secondary/40 w-2",
 						)}
 					/>
 				))}

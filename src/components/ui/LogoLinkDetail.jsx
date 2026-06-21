@@ -1,14 +1,15 @@
 import React from "react";
+import contactInfo from "@/data/contact";
 
 export default function LogoLinkDetail() {
-	const email = "firyansyah22@gmail.com";
+	const email = contactInfo.email;
 	const subject = "Halo%20Firyan%2C%20Ada%20Pesan%20Untukmu";
 	const body = "Halo%20Firyan%2C%0A%0A";
 
 	return (
 		<>
 			<a
-				href="https://github.com/FiryanSyah23"
+				href={contactInfo.github}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="group flex items-center gap-2"
@@ -18,7 +19,7 @@ export default function LogoLinkDetail() {
 			</a>
 
 			<a
-				href="https://linkedin.com/in/firyansyah"
+				href={contactInfo.linkedin}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="group flex items-center gap-2"
@@ -28,7 +29,7 @@ export default function LogoLinkDetail() {
 			</a>
 
 			<a
-				href="https://wa.me/085135886173"
+				href={`https://wa.me/${contactInfo.whatsapp}`}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="group flex items-center gap-2"

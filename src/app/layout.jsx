@@ -14,23 +14,26 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
 	metadataBase: new URL("https://firyansyah-portfolio.vercel.app"),
+	alternates: {
+		canonical: "https://firyansyah-portfolio.vercel.app",
+	},
 	title: {
-		default: "Firyan Syah | Software Engineering",
+		default: "Firyan Syah | Software Engineer",
 		template: "%s | Firyan Syah", // tiap page bisa custom
 	},
 	description:
-		"Hi, I'm Firyan Syah — a Software Engineering who loves turning ideas into real web products using Next.js, MongoDB and Express.js",
+		"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products with responsive and minimalist designs.",
 	verification: {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},
 	keywords: [
 		"firyan syah",
-		"software engineering",
+		"software engineer",
 		"web developer ",
 		"banda aceh",
 		"freelance web developer indonesia",
 		"next.js developer indonesia",
-		"full stack developer ceh",
+		"full stack developer aceh",
 		"firyan syah developer",
 		"fisotasym",
 		"jasa pembuatan website banda aceh",
@@ -40,19 +43,47 @@ export const metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://firyansyah-portfolio.vercel.app",
-		title: "Firyan Syah | Software Engineering",
+		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
-		images: [{ url: "/octaSys.png", width: 1200, height: 630 }],
+		images: [{ url: "/OctaSys.png", width: 1200, height: 630 }],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Firyan Syah | Software Engineer",
+		description:
+			"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products.",
+		images: ["/OctaSys.png"],
+	},
+};
+
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Firyan Syah",
+	jobTitle: "Software Engineer",
+	url: "https://firyansyah-portfolio.vercel.app",
+	image: "https://firyansyah-portfolio.vercel.app/profile.png",
+	sameAs: ["https://github.com/FiryanSyah23", "https://linkedin.com/in/firyansyah"],
+	address: {
+		"@type": "PostalAddress",
+		addressLocality: "Banda Aceh",
+		addressCountry: "ID",
 	},
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html
-			lang="id"
+			lang="en"
 			className={`${geistSans.variable} ${geistMono.variable} h-full scrollbar-none scroll-smooth`}
 		>
+			<head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
+			</head>
 			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed">
 				<main>{children}</main>
 			</body>

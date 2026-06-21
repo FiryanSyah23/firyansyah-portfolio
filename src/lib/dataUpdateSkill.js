@@ -1,6 +1,5 @@
-const { default: dataProjects } = require("@/data/projects");
-const { default: dataSkills } = require("@/data/skills");
-
+import dataSkills from "@/data/skills";
+import dataProjects from "@/data/projects";
 
 const dataSkillsWithCount = dataSkills.map((category) => ({
 	...category,
@@ -12,4 +11,4 @@ const dataSkillsWithCount = dataSkills.map((category) => ({
 	})),
 }));
 
-module.exports = dataSkillsWithCount;
+export default dataSkillsWithCount;

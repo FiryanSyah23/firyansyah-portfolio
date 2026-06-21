@@ -23,7 +23,7 @@ export default function Projects() {
 						<div className="overflow-hidden rounded-lg max-lg:shrink-0  ">
 							<Image
 								src={item.image}
-								alt={item.title}
+								alt={`${item.title} image project`}
 								width={2000}
 								height={2000}
 								className="object-cover h-50  max-md:w-121 max-lg:w-90 max-lg:h-full duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"

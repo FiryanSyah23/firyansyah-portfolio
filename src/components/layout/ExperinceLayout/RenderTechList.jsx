@@ -17,8 +17,8 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 					>
 						<div
 							className={cn(
-								`text-muted hover:text-white  hover: cursor-pointer outline-1 `,
-								` duration-700 delay-200 p-2 flex flex-col p-2 h-11 justify-between  `,
+								`text-muted hover:text-white cursor-pointer outline-1 `,
+								` duration-700 delay-200 p-2 flex flex-col h-11 justify-between  `,
 								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] " : "bg-panel/80"}`,
 								`${hoverList && category.category !== "Tools" ? "h-31" : ""}  `,
 								`${hoverList && category.category === "Tools" ? "h-26 " : ""}`,

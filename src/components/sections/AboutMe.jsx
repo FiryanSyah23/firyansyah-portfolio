@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 export default function AboutMe() {
 	const Devision = [
-		"Software Engineering",
-		"Frond-end Developer",
+		"Software Engineer",
+		"Front-end Developer",
 		"Back-end Developer",
 		"Embedded System Enthusiast",
 	];
@@ -16,8 +16,8 @@ export default function AboutMe() {
 	return (
 		<section id="about" className="w-full mb-50 scroll-mt-40">
 			<div className="container mx-auto text-white sm:px-8 px-4 ">
-				<span className="expe-title text-accent/75 font-semibold text-2xl mb-5 ">| Who I&apos;am</span>
-				<div className="grid grid-cols-[.7fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-15 relative  gap-10 place-items-center">
+				<span className="expe-title text-accent/75 font-semibold text-2xl mb-5 ">| Who I Am</span>
+				<div className="grid grid-cols-[.7fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-28 relative  gap-10 place-items-center">
 					<div className=" *:shadow-[0px_0px_6px_#ffffff] relative ">
 						<div
 							className={cn(
@@ -27,7 +27,7 @@ export default function AboutMe() {
 						>
 							<Image
 								src={"/profile.png"}
-								alt="profilePicture"
+								alt="Firyan Syah profile photo - Software Engineer"
 								width={2000}
 								height={2000}
 								className=" object-cover z-10 bg-linear-to-bl from-panel-hover to-secondary "
@@ -59,16 +59,18 @@ export default function AboutMe() {
 						<h2 className="text-3xl font-extrabold mb-5">
 							Get to Know <span className="text-accent">Firyan Syah</span>
 						</h2>
-						<p>
-							I&apos;m a <strong className="text-accent">Software Engineering</strong> who is passionate
-							about developing reliable and efficient solutions. From IoT and low-level systems to modern
-							web applications, I enjoy creating technology that solves real-world problems.
-						</p>
-						<p className="mt-4">
-							Working across software and hardware has taught me to think in systems, not just code. I
-							focus on building scalable, maintainable, and user-centered applications while continuously
-							exploring new technologies through hands-on projects.
-						</p>
+						<div className="text-muted">
+							<p>
+								I&apos;m a passionate <strong className="text-accent">Software Engineer</strong> focused on
+								building reliable and efficient solutions. From IoT and low-level systems to modern web
+								applications, I enjoy creating technology that solves real-world problems.
+							</p>
+							<p className="mt-4">
+								Working across software and hardware has taught me to think in systems, not just code. I
+								focus on building scalable, maintainable, and user-centered applications while continuously
+								exploring new technologies through hands-on projects.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
