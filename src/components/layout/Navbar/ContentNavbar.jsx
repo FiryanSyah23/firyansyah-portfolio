@@ -14,6 +14,7 @@ export default function ContentNavbar({ setMenu }) {
 					width={200}
 					height={200}
 					className="w-8 h-auto"
+					
 				/>
 				<Link href="/">
 					<span className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>

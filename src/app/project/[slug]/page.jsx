@@ -33,6 +33,28 @@ export async function generateMetadata({ params }) {
 	};
 }
 
-export default function HomeProject({ params }) {
-	return <ViewProject params={params} />;
+export default async function HomeProject({ params }) {
+	const { slug } = await params;
+	const project = dataProjects.find((item) => item.slug === slug);
+
+	// kalau project gak ketemu, biar ViewProject yang handle notFound()
+	const jsonLd = project && {
+		"@context": "https://schema.org",
+		"@type": "CreativeWork",
+		name: project.title,
+		description: project.description,
+		image: `https://firyansyah-portfolio.vercel.app${project.image}`,
+		creator: { "@type": "Person", name: "Firyan Syah" },
+	};
+	return (
+		<>
+			{jsonLd && (
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
+			)}
+			<ViewProject params={params} />
+		</>
+	);
 }

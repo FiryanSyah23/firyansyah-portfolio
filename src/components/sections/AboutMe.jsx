@@ -4,7 +4,7 @@ import Typewriter from "../layout/aboutMe/TypeWriter";
 import { cn } from "@/lib/utils";
 
 export default function AboutMe() {
-	const Devision = [
+	const divisions = [
 		"Software Engineer",
 		"Front-end Developer",
 		"Back-end Developer",
@@ -37,7 +37,7 @@ export default function AboutMe() {
 									Firyan Syah
 								</span>
 								<Typewriter
-									words={Devision}
+									words={divisions}
 									className="z-12 text-base max-xl:text-sm text-accent font-bold"
 								/>
 							</div>

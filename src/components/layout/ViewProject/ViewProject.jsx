@@ -5,14 +5,17 @@ import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import SlideShow from "./SlideShow";
 import InfoProject from "./InfoProject";
+import { notFound } from "next/navigation";
 
 export default function ViewProject({ params }) {
 	const { slug } = use(params);
 	const [full, setFull] = useState(false);
 	const project = dataProjects.find((item) => item.slug === slug);
 
-	const router = useRouter();
-	if (!project) return <div>Project not found</div>;
+	const router = useRouter()
+	;
+	if (!project) notFound();
+	
 	return (
 		<div className="container mx-auto sm:h-dvh flex justify-center pt-20 xl:pb-10 px-5">
 			<div className=" w-full relative rounded-xl ">

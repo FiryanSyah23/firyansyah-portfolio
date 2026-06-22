@@ -33,7 +33,7 @@ export default function Projects() {
 						</div>
 
 						<div className="flex flex-col gap-2 ">
-							<h3 className="text-2xl font-bold mb-1 ">{item.title}</h3>
+							<h3 className="text-2xl font-bold mb-1 text-accent">{item.title}</h3>
 							<div className="flex items-center gap-3 flex-wrap pb-3 ">
 								{item.tech.slice(0, 4).map((tech, index) => (
 									<Badge key={index} className={"first:bg-gray-700/75 "}>

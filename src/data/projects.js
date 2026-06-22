@@ -2,6 +2,7 @@ const dataProjects = [
 	{
 		title: "Digital Twins GUI",
 		slug: "digitalTwins2",
+		updatedAt: "2025-09-10",
 		description:
 			"This application is designed for a solar panel controller. It can monitor and display electrical parameters such as voltage, current, and power.",
 		longDescription:
@@ -16,6 +17,7 @@ const dataProjects = [
 	{
 		title: "WEDLX",
 		slug: "wedlx",
+		updatedAt: "2024-10-13",
 		description: "Modern wedding invitation website with elegant design and interactive features.",
 		longDescription:
 			"WEDLX is a fully responsive digital wedding invitation platform designed to replace traditional printed invitations with a modern, interactive web experience. Built using vanilla JavaScript with a focus on smooth UI interactions, the platform provides couples with an elegant way to share their special day with guests across all devices. Key features include a real-time countdown timer to the wedding date, an interactive photo gallery showcasing the couple's moments, a fully functional RSVP form for guest confirmation, embedded Google Maps for venue location, and a beautiful animated opening sequence for a memorable first impression. The design prioritizes elegance and readability with carefully chosen typography and color palettes. The website is lightweight, fast-loading, and optimized for mobile devices — ensuring guests on smartphones have a seamless experience. This project demonstrates the ability to deliver a polished, client-ready product with attention to both aesthetics and functionality.",
@@ -37,6 +39,7 @@ const dataProjects = [
 	{
 		title: "Personal Portfolio",
 		slug: "personal-portfolio",
+		updatedAt: "2026-06-22",
 		description:
 			"A modern personal portfolio website showcasing my projects, skills, and journey as a developer. Built with a focus on clean UI, smooth interactions, and responsive design.",
 		longDescription:
