@@ -6,9 +6,30 @@ export async function generateMetadata({ params }) {
 	const { slug } = await params;
 	const project = dataProjects.find((item) => item.slug === slug);
 
+	if (!project) {
+		return { title: "Project Not Found", robots: { index: false, follow: false } };
+	}
+
+	const url = `https://firyansyah-portfolio.vercel.app/project/${slug}`;
+
 	return {
-		title: project ? `Project-${project.title}` : "Project",
-		description: project?.description ?? "Project detail",
+		title: `${project.title}`,
+		description: project.description,
+		alternates: {
+			canonical: url, // ← ini yang ditambahkan, paling penting
+		},
+		openGraph: {
+			title: `${project.title} | Firyan Syah`,
+			description: project.description,
+			url,
+			images: [{ url: project.image, width: 1200, height: 630 }],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: `${project.title} | Firyan Syah`,
+			description: project.description,
+			images: [project.image],
+		},
 	};
 }
 

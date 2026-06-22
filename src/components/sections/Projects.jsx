@@ -8,15 +8,16 @@ import Badge from "../ui/Badge";
 export default function Projects() {
 	return (
 		<section id="projects" className="px-3 lg:px-8 pt-20 container mx-auto scroll-mt-40">
-			<h2 className="text-accent/75 font-semibold text-2xl">| Things I&apos;ve Created</h2>
-
-			<div className="flex justify-center py-20 flex-wrap gap-5 select-none">
+				<h2 className="text-accent font-semibold text-center text-3xl mt-10">
+					Things I&apos;ve Created
+				</h2>
+			<div className="flex justify-center py-20 flex-wrap gap-5 xl:gap-10 select-none">
 				{dataProjects.slice(0, 8).map((item, index) => (
 					<div
 						key={index}
 						className={cn(
 							"sm:w-full md:w-90  max-sm:grow flex flex-col justify-between ",
-							"bg-panel text-white rounded-lg overflow-hidden p-3 gap-5",
+							"bg-panel text-white rounded-lg overflow-hidden p-3 gap-5 ",
 							"outline-1 shadow-[0px_0px_5px_#ffffff] ",
 							"hover:shadow-[0px_0px_8px_#ffffff]  hover:-translate-y-2 hover:bg-panel-hover duration-1000 group ",
 						)}

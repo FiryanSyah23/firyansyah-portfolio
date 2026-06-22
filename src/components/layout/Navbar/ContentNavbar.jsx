@@ -9,7 +9,7 @@ export default function ContentNavbar({ setMenu }) {
 		<div className="flex justify-between items-center px-8 ">
 			<div className="nav-title flex gap-2 items-center">
 				<Image
-					src={"/FISOCTASYS.png"}
+					src={"/FISOCTASYM.png"}
 					alt="Fisoctasym logo"
 					width={200}
 					height={200}

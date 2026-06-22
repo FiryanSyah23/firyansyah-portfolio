@@ -29,13 +29,13 @@ export const metadata = {
 	keywords: [
 		"firyan syah",
 		"software engineer",
-		"web developer ",
+		"web developer",
 		"banda aceh",
 		"freelance web developer indonesia",
 		"next.js developer indonesia",
 		"full stack developer aceh",
 		"firyan syah developer",
-		"fisotasym",
+		"fisoctasym",
 		"jasa pembuatan website banda aceh",
 		"jasa pembuatan website indonesia",
 	],
@@ -46,14 +46,14 @@ export const metadata = {
 		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
-		images: [{ url: "/OctaSys.png", width: 1200, height: 630 }],
+		images: [{ url: "/OctaSym.png", width: 1200, height: 630 }],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products.",
-		images: ["/OctaSys.png"],
+		images: ["/OctaSym.png"],
 	},
 };
 

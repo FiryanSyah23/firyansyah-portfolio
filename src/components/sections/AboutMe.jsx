@@ -14,10 +14,9 @@ export default function AboutMe() {
 	const resposiveCard = cn("xl:h-100 xl:w-80 md:h-80 md:w-60 h-80 w-60 ");
 
 	return (
-		<section id="about" className="w-full mb-50 scroll-mt-40">
+		<section id="about" className="w-full py-20 scroll-mt-40">
 			<div className="container mx-auto text-white sm:px-8 px-4 ">
-				<span className="expe-title text-accent/75 font-semibold text-2xl mb-5 ">| Who I Am</span>
-				<div className="grid grid-cols-[.7fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-28 relative  gap-10 place-items-center">
+				<div className="grid grid-cols-[.5fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-28 relative  gap-10 place-items-center">
 					<div className=" *:shadow-[0px_0px_6px_#ffffff] relative ">
 						<div
 							className={cn(
@@ -34,7 +33,9 @@ export default function AboutMe() {
 								priority={true}
 							/>
 							<div className="flex justify-center items-center flex-col my-5">
-								<h3 className=" text-white text-3xl max-xl:text-2xl font-extrabold z-10">Firyan Syah</h3>
+								<span className=" text-white text-3xl max-xl:text-2xl font-extrabold z-10">
+									Firyan Syah
+								</span>
 								<Typewriter
 									words={Devision}
 									className="z-12 text-base max-xl:text-sm text-accent font-bold"
@@ -59,16 +60,25 @@ export default function AboutMe() {
 						<h2 className="text-3xl font-extrabold mb-5">
 							Get to Know <span className="text-accent">Firyan Syah</span>
 						</h2>
-						<div className="text-muted">
+						<div className="text-muted space-y-4">
 							<p>
-								I&apos;m a passionate <strong className="text-accent">Software Engineer</strong> focused on
-								building reliable and efficient solutions. From IoT and low-level systems to modern web
-								applications, I enjoy creating technology that solves real-world problems.
+								I&apos;m a passionate <strong className="text-accent">Software Engineer </strong>
+								focused on building reliable and efficient solutions. From embedded systems and IoT to
+								modern web applications, I enjoy turning ideas into products that solve real-world problems.
 							</p>
-							<p className="mt-4">
-								Working across software and hardware has taught me to think in systems, not just code. I
-								focus on building scalable, maintainable, and user-centered applications while continuously
-								exploring new technologies through hands-on projects.
+
+							<p>
+								Besides working as a developer, I founded
+								<strong className="text-accent"> FISOCTASYM</strong>, my personal brand and web development
+								service. Through FISOCTASYM, I help individuals, businesses, and organizations create
+								modern, responsive, and high-performance websites with a strong emphasis on user experience
+								and clean design.
+							</p>
+
+							<p>
+								The FISOCTASYM symbol represents creativity, technology, and continuous growth. It reflects
+								my mission to bridge software and hardware while delivering digital solutions that bring
+								ideas to life.
 							</p>
 						</div>
 					</div>
