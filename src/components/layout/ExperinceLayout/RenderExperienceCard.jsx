@@ -3,7 +3,8 @@ import Image from "next/image";
 
 export default function RenderExperienceCard() {
 	return (
-		<div className="flex justify-center gap-5 mt-10 flex-wrap ">
+		<div className="flex justify-center gap-5  flex-wrap ">
+			
 			{dataExperience.map((item, index) => (
 				<div
 					key={index}
