@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import dataProjects from "@/data/projects";
 import ViewProject from "../../../components/layout/ViewProject/ViewProject";
 
+export async function generateStaticParams() {
+	return dataProjects.map((p) => ({ slug: p.slug }));
+}
+
 export async function generateMetadata({ params }) {
 	const { slug } = await params;
 	const project = dataProjects.find((item) => item.slug === slug);

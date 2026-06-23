@@ -41,7 +41,7 @@ export default function AllProject() {
 				>
 					&laquo; Back
 				</button>
-				<h2 className=" text-accent text-3xl  font-extrabold mb-5 shrink-0">All Project |</h2>
+				<h1 className=" text-accent text-3xl  font-extrabold mb-5 shrink-0">All Project |</h1>
 			</div>
 
 			<div className="grid lg:grid-cols-[120px_.8fr] lg:h-full  gap-3  overflow-hidden md:justify-center ">
@@ -93,14 +93,14 @@ export default function AllProject() {
 								<Image
 									src={item.image}
 									alt={`${item.title} - project`}
-									width={2000}
-									height={2000}
+									width={500}
+									height={500}
 									className="w-full h-full object-cover"
-									priority={true}
+									priority={index === 0}
 								/>
 							</div>
 							<div className="flex flex-col gap-3 w-full">
-								<h3 className="text-accent text-xl lg:text-2xl font-bold">{item.title}</h3>
+								<h2 className="text-accent text-xl lg:text-2xl font-bold">{item.title}</h2>
 								<div className="flex flex-wrap gap-2">
 									{item.tech.map((t, i) => (
 										<Badge key={i} className={"first:bg-gray-700/75"}>

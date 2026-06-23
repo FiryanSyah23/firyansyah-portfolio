@@ -27,10 +27,9 @@ export default function AboutMe() {
 							<Image
 								src={"/profile.png"}
 								alt="Firyan Syah profile photo - Software Engineer"
-								width={2000}
-								height={2000}
+								width={350}
+								height={350}
 								className=" object-cover z-10 bg-linear-to-bl from-panel-hover to-secondary "
-								priority={true}
 							/>
 							<div className="flex justify-center items-center flex-col my-5">
 								<span className=" text-white text-3xl max-xl:text-2xl font-extrabold z-10">

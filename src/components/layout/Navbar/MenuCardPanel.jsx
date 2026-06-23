@@ -4,7 +4,7 @@ import SosmedLogoLink from "../../ui/SosmedLogoLink";
 export default function MenuCardPanel({ menu, setMenu }) {
 	return (
 		<div
-			className={`absolute lg:hidden bg-panel/98 ${menu ? "top-20 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
+			className={`absolute lg:hidden bg-panel/98 ${menu ? "top-14 opacity-100" : "-top-105 opacity-0 "} p-5 w-full rounded-xl duration-500`}
 			onClick={() => setMenu(false)}
 		>
 			<div className="flex flex-col gap-2">
@@ -17,14 +17,14 @@ export default function MenuCardPanel({ menu, setMenu }) {
 						<SosmedLogoLink />
 					</div>
 
-					<button
-						className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch duration-500"
-						onClick={() => {
-							window.location.href = "/files/CV_Firyan_Syah.pdf";
-						}}
+					<a
+						href="/files/CV_Firyan_Syah.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch  text-center outline-2 hover:outline-offset-3 active:outline-offset-3"
 					>
 						View my CV
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>

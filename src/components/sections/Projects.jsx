@@ -24,8 +24,8 @@ export default function Projects() {
 							<Image
 								src={item.image}
 								alt={`${item.title} project image`}
-								width={2000}
-								height={2000}
+								width={400}
+								height={400}
 								className="object-cover h-50  duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
 							/>
 						</div>

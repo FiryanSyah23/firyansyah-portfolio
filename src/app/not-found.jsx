@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-	title: "Project Not Found",
+	title: "404 | URL Project Wrong",
 	robots: { index: false, follow: false },
 };
 
@@ -20,10 +20,10 @@ export default function ProjectNotFound() {
 			</p>
 
 			<Link
-				href="/"
+				href="/project"
 				className="bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3 p-3 text-lg sm:text-xl rounded-2xl text-white w-70 text-center"
 			>
-				&laquo; Back to home
+				&laquo; Go to All Project
 			</Link>
 		</div>
 	);

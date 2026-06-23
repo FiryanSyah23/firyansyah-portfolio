@@ -30,9 +30,9 @@ export default function RenderExperienceCard() {
 						<p>{item.location}</p>
 						<h3 className="mt-2 text-start">Achievements:</h3>
 						<ul className="text-start px-5  list-disc flex flex-col gap-2 ">
-							{item.achievements.map((item, index) => (
+							{item.achievements.map((achv, index) => (
 								<li key={index} className="">
-									{item}
+									{achv}
 								</li>
 							))}
 						</ul>

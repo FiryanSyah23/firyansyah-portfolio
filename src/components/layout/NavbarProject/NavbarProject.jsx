@@ -29,14 +29,14 @@ export default function NavbarProject() {
 						<div className=" text-4xl *:hover:text-secondary flex gap-2  ">
 							<SosmedLogoLink />
 						</div>
-						<button
-							className=" rounded-lg bg-primary hover:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap"
-							onClick={() => {
-								window.location.href = "/files/CV_Firyan_Syah.pdf";
-							}}
+						<a
+							href="/files/CV_Firyan_Syah.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							className=" rounded-lg bg-primary hover:bg-secondary active:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap"
 						>
 							View my CV
-						</button>
+						</a>
 					</div>
 
 					<button
@@ -58,14 +58,14 @@ export default function NavbarProject() {
 								<SosmedLogoLink />
 							</div>
 
-							<button
-								className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch duration-500"
-								onClick={() => {
-									window.location.href = "/files/CV_Firyan_Syah.pdf";
-								}}
+							<a
+								href="/files/CV_Firyan_Syah.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch  text-center outline-2 hover:outline-offset-3 active:outline-offset-3"
 							>
 								View my CV
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
