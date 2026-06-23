@@ -7,10 +7,8 @@ import Badge from "../ui/Badge";
 
 export default function Projects() {
 	return (
-		<section id="projects" className="px-3 lg:px-8 pt-20 container mx-auto scroll-mt-40">
-				<h2 className="text-accent font-semibold text-center text-3xl mt-10">
-					Things I&apos;ve Created
-				</h2>
+		<section id="projects" className="px-3 lg:px-8 pt-20 container mx-auto scroll-mt-40 py-20">
+			<h2 className="text-accent font-semibold text-center text-3xl ">Things I&apos;ve Created</h2>
 			<div className="flex justify-center py-20 flex-wrap gap-5 xl:gap-10 select-none">
 				{dataProjects.slice(0, 8).map((item, index) => (
 					<div
@@ -57,7 +55,7 @@ export default function Projects() {
 							<div className="flex justify-between gap-3 text-xs lg:text-base *:active:outline-offset-5">
 								<DemoButton item={item} />
 								<Link
-									href={`project/${item.slug}`}
+									href={`/project/${item.slug}`}
 									className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md  outline-2 hover:outline-offset-5  w-full  `}
 								>
 									View Project Detail

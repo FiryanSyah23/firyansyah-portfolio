@@ -13,7 +13,7 @@ export default function NavbarProject() {
 					<div className="nav-title flex gap-2 items-center">
 						<Image
 							src={"/FISOCTASYM.png"}
-							alt="Fisoctasym logo"
+							alt="Fisoctasym logo mini"
 							width={200}
 							height={200}
 							className="w-8 h-auto"

@@ -1,4 +1,5 @@
 // src/app/project/[slug]/page.jsx
+import { notFound } from "next/navigation";
 import dataProjects from "@/data/projects";
 import ViewProject from "../../../components/layout/ViewProject/ViewProject";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }) {
 		title: `${project.title}`,
 		description: project.description,
 		alternates: {
-			canonical: url, // ← ini yang ditambahkan, paling penting
+			canonical: url,
 		},
 		openGraph: {
 			title: `${project.title} | Firyan Syah`,
@@ -37,8 +38,11 @@ export default async function HomeProject({ params }) {
 	const { slug } = await params;
 	const project = dataProjects.find((item) => item.slug === slug);
 
-	// kalau project gak ketemu, biar ViewProject yang handle notFound()
-	const jsonLd = project && {
+	if (!project) {
+		notFound();
+	}
+
+	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "CreativeWork",
 		name: project.title,
@@ -46,14 +50,13 @@ export default async function HomeProject({ params }) {
 		image: `https://firyansyah-portfolio.vercel.app${project.image}`,
 		creator: { "@type": "Person", name: "Firyan Syah" },
 	};
+
 	return (
 		<>
-			{jsonLd && (
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
-			)}
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
 			<ViewProject params={params} />
 		</>
 	);

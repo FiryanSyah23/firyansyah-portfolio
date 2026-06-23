@@ -66,7 +66,7 @@ export default function SlideShow({ project, setFull, full }) {
 				>
 					<Image
 						src={project.projectImg[currentIndex]}
-						alt="slider"
+						alt={`${project.title} preview image`}
 						height={5000}
 						width={5000}
 						className={`object-cover h-full rounded-lg `}

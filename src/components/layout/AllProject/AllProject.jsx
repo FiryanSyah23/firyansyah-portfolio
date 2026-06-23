@@ -10,8 +10,9 @@ import { useState } from "react";
 
 export default function AllProject() {
 	const [filter, setFilter] = useState(dataProjects.slice());
-	const router = useRouter();
 	const [activeCategory, setActiveCategory] = useState("all"); // default: "All" yang aktif pertama kali
+
+	const router = useRouter();
 
 	function filterCategory(category) {
 		setActiveCategory(category);
@@ -111,7 +112,7 @@ export default function AllProject() {
 								<div className="flex justify-between gap-3 text-xs lg:text-base ">
 									<DemoButton item={item} />
 									<Link
-										href={`project/${item.slug}`}
+										href={`/project/${item.slug}`}
 										className="bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full"
 									>
 										View Project Detail

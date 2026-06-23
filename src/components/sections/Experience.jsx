@@ -4,7 +4,7 @@ import TechSkillsList from "../layout/ExperinceLayout/TechSkillsList";
 
 export default function Experience() {
 	return (
-		<section id="experience" className="w-full scroll-mt-40  ">
+		<section id="experience" className="w-full py-20 scroll-mt-40  ">
 			<div className="max-sm:px-4 px-8 container mx-auto ">
 				<h2 className="text-accent font-semibold text-center text-3xl mt-10">Journey Skills Experience</h2>
 				<RenderExperienceCard />

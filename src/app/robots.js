@@ -6,5 +6,11 @@ export default function robots() {
 			disallow: [],
 		},
 		sitemap: "https://firyansyah-portfolio.vercel.app/sitemap.xml",
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+		},
 	};
 }
