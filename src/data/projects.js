@@ -8,8 +8,8 @@ const dataProjects = [
 		longDescription:
 			"Digital Twins GUI is a real-time monitoring application developed to simulate and visualize the behavior of a solar panel system. The application was built using Python with a custom GUI interface, connected to an Arduino microcontroller via serial communication (UART protocol) to collect live sensor data. It displays key electrical parameters including voltage (V), current (A), and power (W) in real-time with dynamic charts and numerical readouts. The system was designed following the Digital Twin concept — creating a virtual representation of a physical solar panel setup — making it useful for observation, analysis, and academic learning. This project is actively used in the Electrical Engineering Laboratory at UIN Ar-Raniry as an educational tool to help students understand solar energy systems and data acquisition. The firmware was written in C++ for the Arduino side, handling ADC sensor readings and serial data transmission, while Python handled data parsing, processing, and GUI rendering.",
 		tech: ["Desktop App", "Python", "Arduino"],
-		image: "/imgProject/digitaltwins/digitalTwins.png",
-		projectImg: ["/imgProject/digitaltwins/digitalTwins.png"],
+		image: "/imgProject/digitalTwins/digitalTwins.png",
+		projectImg: ["/imgProject/digitalTwins/digitalTwins.png"],
 		demo: null,
 		status: "Completed",
 		year: "2025",
@@ -18,7 +18,8 @@ const dataProjects = [
 		title: "WEDLX",
 		slug: "wedlx",
 		updatedAt: "2024-10-13",
-		description: "Modern wedding invitation website with elegant design and interactive features.",
+		description:
+			"WEDLX is a fully responsive digital wedding invitation platform designed to replace traditional printed invitations with a modern, interactive web experience.",
 		longDescription:
 			"WEDLX is a fully responsive digital wedding invitation platform designed to replace traditional printed invitations with a modern, interactive web experience. Built using vanilla JavaScript with a focus on smooth UI interactions, the platform provides couples with an elegant way to share their special day with guests across all devices. Key features include a real-time countdown timer to the wedding date, an interactive photo gallery showcasing the couple's moments, a fully functional RSVP form for guest confirmation, embedded Google Maps for venue location, and a beautiful animated opening sequence for a memorable first impression. The design prioritizes elegance and readability with carefully chosen typography and color palettes. The website is lightweight, fast-loading, and optimized for mobile devices — ensuring guests on smartphones have a seamless experience. This project demonstrates the ability to deliver a polished, client-ready product with attention to both aesthetics and functionality.",
 		tech: ["Website", "Javascript"],
