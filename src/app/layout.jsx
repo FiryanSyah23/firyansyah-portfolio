@@ -19,12 +19,17 @@ export const metadata = {
 	},
 	title: {
 		default: "Firyan Syah | Software Engineer",
-		template: "%s | Firyan Syah", // tiap page bisa custom
+		template: "%s | Firyan Syah",
 	},
 	description:
 		"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products with responsive and minimalist designs.",
 	verification: {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
+	},
+	icons: {
+		icon: "/OctaSym.png",
+		shortcut: "/OctaSym.png",
+		apple: "/OctaSym.png",
 	},
 	keywords: [
 		"Firyan Syah",
@@ -42,6 +47,7 @@ export const metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://firyansyah-portfolio.vercel.app",
+		siteName: "Firyan Syah Portfolio",
 		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
