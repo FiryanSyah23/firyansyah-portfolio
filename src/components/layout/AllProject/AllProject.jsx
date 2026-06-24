@@ -1,6 +1,5 @@
 "use client";
 import Badge from "@/components/ui/Badge";
-import DemoButton from "@/components/ui/DemoButton";
 import dataProjects from "@/data/projects";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -110,7 +109,14 @@ export default function AllProject() {
 								</div>
 								<p className="grow text-sm lg:text-base">{item.description}</p>
 								<div className="flex justify-between gap-3 text-xs lg:text-base ">
-									<DemoButton item={item} />
+									<a
+										href={`${item.demo}`}
+										target="_blank"
+										rel="noopener noreferrer"
+										className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full text-center  ${!item.demo ? "hidden" : "inline-block"}`}
+									>
+										View Project
+									</a>
 									<Link
 										href={`/project/${item.slug}`}
 										className="bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full"

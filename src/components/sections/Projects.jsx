@@ -2,7 +2,6 @@ import Image from "next/image";
 import dataProjects from "@/data/projects";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import DemoButton from "../ui/DemoButton";
 import Badge from "../ui/Badge";
 
 export default function Projects() {
@@ -53,7 +52,14 @@ export default function Projects() {
 								</p>
 							</div>
 							<div className="flex justify-between gap-3 text-xs lg:text-base *:active:outline-offset-5">
-								<DemoButton item={item} />
+								<a
+									href={`${item.demo}`}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full text-center ${!item.demo ? "hidden" : "inline-block"}`}
+								>
+									View Project
+								</a>
 								<Link
 									href={`/project/${item.slug}`}
 									className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md  outline-2 hover:outline-offset-5  w-full  `}
