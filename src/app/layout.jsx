@@ -28,9 +28,9 @@ export const metadata = {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},
 	icons: {
-		icon: "/OctaSym.png",
-		shortcut: "/OctaSym.png",
-		apple: "/OctaSym.png",
+		icon: "/icon.png",
+		shortcut: "/icon.png",
+		apple: "/icon.png",
 	},
 	keywords: [
 		"Firyan Syah",
@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed">
-				<Analytics/>
+				<Analytics />
 				<main>{children}</main>
 			</body>
 		</html>
