@@ -51,6 +51,7 @@ export default function LeftMotion() {
 											repeat: Infinity,
 											repeatDelay: 5,
 											ease: "easeInOut",
+											delay: Number(i - 0.6),
 										}}
 										className="inline-block"
 									>
