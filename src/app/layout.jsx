@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -96,6 +97,7 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed">
+				<Analytics/>
 				<main>{children}</main>
 			</body>
 		</html>
