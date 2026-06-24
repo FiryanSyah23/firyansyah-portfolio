@@ -14,8 +14,8 @@ export default function NavbarProject() {
 						<Image
 							src={"/FISOCTASYM.png"}
 							alt="Fisoctasym logo mini"
-							width={200}
-							height={200}
+							width={50}
+							height={50}
 							className="w-8 h-auto"
 						/>
 						<Link href="/">

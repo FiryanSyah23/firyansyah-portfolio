@@ -26,16 +26,18 @@ export default function InfoProject({ project }) {
 						</span>
 					</div>
 					<div className="max-md:w-full">
-						<button
+						<a
+							href={project.demo}
+							target="_blank"
+							rel="noopener noreferrer"
 							className={
 								!project.demo
 									? "hidden"
-									: " bg-secondary p-1 font-bold rounded-lg outline-2 hover:outline-offset-3 active:outline-offset-3 max-md:w-full"
+									: "bg-secondary p-1 font-bold rounded-lg outline-2 hover:outline-offset-3 active:outline-offset-3 max-md:w-full inline-block text-center"
 							}
-							onClick={() => window.open(project.demo)}
 						>
 							See Website
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>

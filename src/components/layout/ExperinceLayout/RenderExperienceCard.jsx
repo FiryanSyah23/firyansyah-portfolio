@@ -14,8 +14,8 @@ export default function RenderExperienceCard() {
 						<Image
 							src={item.img}
 							alt={`${item.company} image experience`}
-							width={500}
-							height={500}
+							width={200}
+							height={200}
 							className="w-30 h-auto "
 						/>
 					</div>
