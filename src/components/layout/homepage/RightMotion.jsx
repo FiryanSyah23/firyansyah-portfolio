@@ -9,7 +9,7 @@ export default function RightMotion() {
 			initial={{ opacity: 0, y: -50 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 1, delay: 0.5 }}
-			className="logo lg:justify-end m-5 lg:m-0 justify-center flex items-center"
+			className="logo lg:justify-end m-5 lg:m-0 justify-center flex items-center max-md:order-1"
 		>
 			<motion.div
 				animate={{
