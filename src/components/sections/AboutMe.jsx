@@ -83,7 +83,7 @@ export default function AboutMe() {
 					variants={container}
 					initial="hidden"
 					whileInView="show"
-					viewport={{ once: false }}
+					viewport={{ once: true }}
 					className="grid grid-cols-[.5fr_1fr]  max-sm:grid-cols-1 md:my-35 max-sm:my-28 relative  gap-10 place-items-center"
 				>
 					<div className=" *:shadow-[0px_0px_6px_#ffffff] relative ">

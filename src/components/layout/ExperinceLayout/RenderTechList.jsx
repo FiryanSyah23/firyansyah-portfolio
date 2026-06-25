@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import getExperienceDuration from "@/lib/utils/countDateExperience";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function RenderTechList({ category, setExpandList, expandList }) {
+export default function RenderTechList({ category, setExpandList, expandList, fadeTop }) {
 	return (
 		<div className="flex flex-col gap-4 w-full">
 			{category.items.map((tech, techIndex) => {
@@ -10,8 +11,9 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 				const duration = tech.startDate ? getExperienceDuration(tech.startDate) : null;
 
 				return (
-					<div
+					<motion.div
 						key={techIndex}
+						variants={fadeTop}
 						onMouseEnter={() => setExpandList(tech)}
 						onMouseLeave={() => setExpandList(null)}
 					>
@@ -69,7 +71,7 @@ export default function RenderTechList({ category, setExpandList, expandList }) 
 								</div>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				);
 			})}
 		</div>

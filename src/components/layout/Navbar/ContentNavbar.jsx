@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export default function ContentNavbar({ setMenu }) {
 	return (
 		<div className="flex justify-between items-center px-8 ">
-			<div className="nav-title flex gap-2 items-center">
+			<Link href="/" rel="noopener noreferrer" className="nav-title flex gap-2 items-center">
 				<Image
 					src={"/FISOCTASYM.png"}
 					alt="Fisoctasym logo mini"
@@ -15,10 +15,8 @@ export default function ContentNavbar({ setMenu }) {
 					height={50}
 					className="w-8 h-auto"
 				/>
-				<Link href="/">
-					<span className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>
-				</Link>
-			</div>
+				<span className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>
+			</Link>
 
 			<div className="group-action-link flex items-center gap-5">
 				<div

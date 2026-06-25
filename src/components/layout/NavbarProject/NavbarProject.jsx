@@ -10,7 +10,7 @@ export default function NavbarProject() {
 		<div className="header w-full  fixed text-text pt-5 px-3 z-9999">
 			<nav className="container xl:w-290 mx-auto bg-panel/98  md:py-2 rounded-xl relative outline-white outline-1">
 				<div className="flex justify-between items-center px-8 ">
-					<div className="nav-title flex gap-2 items-center">
+					<Link href="/" rel="noopener noreferrer" className="nav-title flex gap-2 items-center">
 						<Image
 							src={"/FISOCTASYM.png"}
 							alt="Fisoctasym logo mini"
@@ -18,12 +18,8 @@ export default function NavbarProject() {
 							height={50}
 							className="w-8 h-auto"
 						/>
-						<Link href="/">
-							<span className=" font-bold lg:text-2xl text-lg tracking-widest text-nowrap">
-								FISOCTASYM{" "}
-							</span>
-						</Link>
-					</div>
+						<span className="font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>
+					</Link>
 
 					<div className="hidden md:flex items-center gap-5">
 						<div className=" text-4xl *:hover:text-secondary flex gap-2  ">

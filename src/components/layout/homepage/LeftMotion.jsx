@@ -38,7 +38,8 @@ export default function LeftMotion() {
 							<motion.span
 								key={i}
 								variants={word}
-								className={`inline-block mr-3 ${isAccent ? "text-accent font-bold" : ""}`}
+								className={`inline-block mr-3 ${isAccent ? "text-accent font-bold" : ""} `}
+								translate="no"
 							>
 								{isAccent ? (
 									<motion.span
