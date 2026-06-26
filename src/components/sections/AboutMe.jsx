@@ -9,8 +9,8 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
-			delayChildren: 0.1,
-			staggerChildren: 0.2,
+			delayChildren: 0.4,
+			staggerChildren: 0.3,
 		},
 	},
 };
@@ -29,7 +29,6 @@ const CardProfile = {
 		x: 0,
 		transition: {
 			duration: 0.5,
-			ease: "easeOut",
 		},
 	},
 };

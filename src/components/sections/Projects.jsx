@@ -1,8 +1,15 @@
+"use client";
 import Image from "next/image";
 import dataProjects from "@/data/projects";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Badge from "../ui/Badge";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+	hidden: { y: -60, opacity: 0, scale: 0.8 },
+	show: { y: 0, opacity: 1, scale: 1 },
+};
 
 export default function Projects() {
 	return (
@@ -10,8 +17,17 @@ export default function Projects() {
 			<h2 className="text-accent font-semibold text-center text-3xl ">Things I&apos;ve Created</h2>
 			<div className="flex justify-center mt-10 flex-wrap gap-5 xl:gap-10 select-none">
 				{dataProjects.slice(0, 8).map((item, index) => (
-					<div
+					<motion.div
 						key={index}
+						variants={cardVariants}
+						initial="hidden"
+						whileInView="show"
+						viewport={{ once: true, amount: 0.2 }}
+						transition={{
+							duration: 0.3,
+							delay: 0.2,
+							ease: "easeIn",
+						}}
 						className={cn(
 							"sm:w-full md:w-90  max-sm:grow flex flex-col justify-between ",
 							"bg-panel text-white rounded-lg overflow-hidden p-3 gap-5 ",
@@ -68,14 +84,14 @@ export default function Projects() {
 								</Link>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				))}
 			</div>
 			<div className={` flex justify-center pb-10  ${dataProjects.length < 8 ? "hidden" : ""} `}>
 				<Link
 					href={"/project"}
 					scroll={false}
-					className={`bg-primary/75 hover:bg-secondary text-white text-xl text-center p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
+					className={`bg-primary/75 hover:bg-secondary text-white text-xl text-center mt-10 p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
 				>
 					See more
 				</Link>
