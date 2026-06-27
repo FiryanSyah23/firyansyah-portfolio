@@ -9,11 +9,9 @@ export default function ProjectNotFound() {
 	return (
 		<div className="container mx-auto h-dvh flex items-center justify-center flex-col gap-6 text-white px-4 pt-20">
 			<div className="text-7xl sm:text-8xl mb-2">🔍</div>
-			<h1 className="text-accent text-center text-3xl sm:text-5xl font-extrabold">
-				404 | Page Not Found
-			</h1>
+			<h1 className="text-accent text-center text-3xl sm:text-5xl font-extrabold">404 | Page Not Found</h1>
 			<p className="text-muted text-center max-w-md text-sm sm:text-base">
-				The page you&apos;re looking for doesn&apos;t exist or has been moved.
+				Sorry, we couldn’t find the page you’re looking for.
 			</p>
 
 			<Link

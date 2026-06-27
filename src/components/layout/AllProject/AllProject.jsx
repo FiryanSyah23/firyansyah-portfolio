@@ -3,7 +3,6 @@ import Badge from "@/components/ui/Badge";
 import dataProjects from "@/data/projects";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Corben } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

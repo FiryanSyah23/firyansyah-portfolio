@@ -48,7 +48,7 @@ export default function SlideShow({ project, setFull, full }) {
 		<div
 			className={cn(
 				"mt-15 text-white w-full  shadow-[0px_0px_10px_#b13bff78] inset-shadow-2xs inset-shadow-[0px_0px_10px_#b13bff] ",
-				` ${full ? "h-full" : "h-65 sm:h-100"} rounded-xl overflow-hidden relative  `,
+				` ${full ? "sm:h-full" : "h-65 sm:h-100"} rounded-xl overflow-hidden relative`,
 			)}
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
