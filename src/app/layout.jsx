@@ -29,9 +29,9 @@ export const metadata = {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},
 	icons: {
-		icon: "src/app/icon.png",
-		shortcut: "src/app/icon.png",
-		apple: "src/app/icon.png",
+		icon: "/FISOCTASYM.png",
+		shortcut: "/FISOCTASYM.png",
+		apple: "/FISOCTASYM.png",
 	},
 	keywords: [
 		"Firyan Syah",
