@@ -43,10 +43,10 @@ export default function Experience() {
 					variants={container}
 					initial="hidden"
 					whileInView="show"
-					viewport={{ once: true, amount: 0.3 }}
+					viewport={{ once: true, amount: 0.2 }}
 					className="mt-10"
 				>
-					<motion.h3 variants={fadeTop} className=" text-white font-semibold text-center text-xl ">
+					<motion.h3 variants={fadeTop} className=" text-white font-semibold text-center text-xl  ">
 						Programing Experience Journey
 					</motion.h3>
 					<motion.p

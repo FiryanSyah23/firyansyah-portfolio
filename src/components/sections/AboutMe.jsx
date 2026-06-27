@@ -97,34 +97,23 @@ export default function AboutMe() {
 
 						<motion.div
 							variants={CardProfile}
-							className={cn(
-								resposiveCard,
-								"bg-panel rounded-xl relative overflow-hidden border-2 border-white z-2",
-							)}
+							className={cn(resposiveCard, "bg-panel rounded-xl relative overflow-hidden border-2 border-white z-2")}
 						>
 							<Image
 								src={"/profile.png"}
 								alt="Firyan Syah profile photo - Software Engineer"
 								width={350}
 								height={350}
+								loading="eager"
 								className=" object-cover z-10 bg-linear-to-bl from-panel-hover to-secondary "
 							/>
 							<div className="flex justify-center items-center flex-col my-5">
-								<span className=" text-white text-3xl max-xl:text-2xl font-extrabold z-10">
-									Firyan Syah
-								</span>
-								<Typewriter
-									words={divisions}
-									className="z-12 text-base max-xl:text-sm text-accent font-bold"
-								/>
+								<span className=" text-white text-3xl max-xl:text-2xl font-extrabold z-10">Firyan Syah</span>
+								<Typewriter words={divisions} className="z-12 text-base max-xl:text-sm text-accent font-bold" />
 							</div>
 
-							<div
-								className={`w-100 h-30  bg-panel absolute rotate-20 right-10 xl:top-60 md:top-40 top-40`}
-							></div>
-							<div
-								className={`w-100 h-30 bg-panel absolute rotate-160 left-10 xl:top-60 md:top-40 top-40`}
-							></div>
+							<div className={`w-100 h-30  bg-panel absolute rotate-20 right-10 xl:top-60 md:top-40 top-40`}></div>
+							<div className={`w-100 h-30 bg-panel absolute rotate-160 left-10 xl:top-60 md:top-40 top-40`}></div>
 						</motion.div>
 					</div>
 					<div className="flex-col flex justify-center">
@@ -135,22 +124,20 @@ export default function AboutMe() {
 						<div className="text-muted space-y-4 max-h-full ">
 							<motion.p variants={item}>
 								I&apos;m a passionate <strong className="text-accent">Software Engineer </strong>
-								focused on building reliable and efficient solutions. From embedded systems and IoT to
-								modern web applications, I enjoy turning ideas into products that solve real-world problems.
+								focused on building reliable and efficient solutions. From embedded systems and IoT to modern web
+								applications, I enjoy turning ideas into products that solve real-world problems.
 							</motion.p>
 
 							<motion.p variants={item}>
 								Besides working as a developer, I founded
-								<strong className="text-accent"> FISOCTASYM</strong>, my personal brand and web development
-								service. Through FISOCTASYM, I help individuals, businesses, and organizations create
-								modern, responsive, and high-performance websites with a strong emphasis on user experience
-								and clean design.
+								<strong className="text-accent"> FISOCTASYM</strong>, my personal brand and web development service.
+								Through FISOCTASYM, I help individuals, businesses, and organizations create modern, responsive, and
+								high-performance websites with a strong emphasis on user experience and clean design.
 							</motion.p>
 
 							<motion.p variants={item}>
-								The FISOCTASYM symbol represents creativity, technology, and continuous growth. It reflects
-								my mission to bridge software and hardware while delivering digital solutions that bring
-								ideas to life.
+								The FISOCTASYM symbol represents creativity, technology, and continuous growth. It reflects my mission to
+								bridge software and hardware while delivering digital solutions that bring ideas to life.
 							</motion.p>
 						</div>
 					</div>

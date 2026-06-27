@@ -25,7 +25,7 @@ export default function LeftMotion() {
 			initial={{ opacity: 0, y: -50 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5 }}
-			className="main-header title flex justify-center lg:text-start text-center flex-col gap-3 max-md:order-2"
+			className="main-header title flex justify-center lg:text-start text-center flex-col gap-3 lg:order-1 order-2"
 		>
 			<h1 className="max-md:text-2xl sm:text-4xl xl:text-4xl font-bold">Hello I&apos;m Firyan Syah</h1>
 
@@ -68,8 +68,8 @@ export default function LeftMotion() {
 			</p>
 
 			<p className="text-muted mt-2 md:text-base/relaxed">
-				I build web applications, mobile apps, embedded & IoT systems — bridging the gap between
-				software and hardware. Always learning, always shipping.
+				I build web applications, mobile apps, embedded & IoT systems — bridging the gap between software and hardware.
+				Always learning, always shipping.
 			</p>
 		</motion.div>
 	);

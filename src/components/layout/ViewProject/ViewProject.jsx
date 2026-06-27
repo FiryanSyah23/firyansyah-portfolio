@@ -13,7 +13,7 @@ export default function ViewProject({ params }) {
 	const router = useRouter();
 
 	return (
-		<div className="container mx-auto sm:h-dvh flex justify-center pt-20 xl:pb-10 px-5">
+		<div className={`container mx-auto md:h-dvh flex justify-center pt-20 xl:pb-10 px-5`}>
 			<div className=" w-full relative rounded-xl ">
 				<button
 					className={cn(
@@ -28,8 +28,8 @@ export default function ViewProject({ params }) {
 				<div className="flex flex-col sm:p-4 h-full ">
 					<SlideShow project={project} setFull={setFull} full={full} />
 
+					<InfoProject project={project} />
 					<div className={`${full ? "hidden" : ""}`}>
-						<InfoProject project={project} />
 						<p className=" text-justify max-md:indent-10 sm:text-center text-base/relaxed xl:text-lg text-white bg-radial-[at_50%_50%] from-secondary/15 to-transparent to-75%">
 							{project.longDescription}
 						</p>

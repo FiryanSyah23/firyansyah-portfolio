@@ -19,27 +19,19 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 					>
 						<div
 							className={cn(
-								`text-muted hover:text-white cursor-pointer outline-1 `,
+								` cursor-pointer outline-1 `,
 								` duration-700 delay-200 p-2 flex flex-col h-11 justify-between  `,
-								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] " : "bg-panel/80"}`,
+								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] text-white" : "bg-panel/80 text-muted"}`,
 								`${hoverList && category.category !== "Tools" ? "h-31" : ""}  `,
 								`${hoverList && category.category === "Tools" ? "h-26 " : ""}`,
 							)}
 						>
 							<div className={`flex justify-center items-center gap-2 `}>
-								<Image
-									src={tech.logo}
-									alt={`${tech.name} logo-tech`}
-									width={50}
-									height={50}
-									className="w-7 h-auto"
-								/>
+								<Image src={tech.logo} alt={`${tech.name} logo-tech`} width={50} height={50} className="w-7 h-auto" />
 								<p className="text-sm">{tech.name}</p>
 							</div>
 
-							<div
-								className={`${hoverList ? "opacity-100  " : "opacity-0"} duration-2500 ease-in-out delay-150`}
-							>
+							<div className={`${hoverList ? "opacity-100  " : "opacity-0"} duration-2500 ease-in-out delay-150`}>
 								<div
 									className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"}`}
 								>
@@ -47,16 +39,15 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 								</div>
 							</div>
 
-							<div
-								className={`${hoverList ? "opacity-100 " : "opacity-0"} delay-150 duration-2500 ease-in-out`}
-							>
+							<div className={`${hoverList ? "opacity-100 " : "opacity-0"} delay-150 duration-2500 ease-in-out`}>
 								<div className={`flex flex-col justify-between ${hoverList ? "" : "hidden"}`}>
 									<div className="flex justify-between pt-2 text-secondary text-xs">
 										{duration && (
 											<span className="flex gap-1 items-center">
 												<i className="ri-calendar-fill"></i>
 												<p>
-													&plusmn;{duration.value} {duration.unit}
+													&plusmn;
+													{duration.value} {duration.unit}
 												</p>
 											</span>
 										)}

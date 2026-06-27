@@ -51,8 +51,7 @@ export const metadata = {
 		url: "https://firyansyah-portfolio.vercel.app",
 		siteName: "Firyan Syah Portfolio",
 		title: "Firyan Syah | Software Engineer",
-		description:
-			"Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
+		description: "Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
 		images: [{ url: "/OctaSym.png", width: 1200, height: 630 }],
 	},
 	twitter: {
@@ -87,15 +86,9 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html
-			lang="en"
-			className={`${geistSans.variable} ${geistMono.variable} h-full scrollbar-none scroll-smooth`}
-		>
-			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed">
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
+		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full scrollbar-none `}>
+			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed ">
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 				<GoogleTranslateFix />
 				<Analytics />
 				<main>{children}</main>

@@ -4,7 +4,7 @@ import RightMotion from "../layout/homepage/RightMotion";
 
 export default function Homepage() {
 	return (
-		<section id="home" className="h-dvh scroll-mt-20 flex items-center">
+		<section id="home" className="py-50 scroll-mt-20 flex items-center">
 			<div className="container mx-auto px-4">
 				<div className="grid lg:grid-cols-2 grid-cols-1 text-white">
 					<LeftMotion />

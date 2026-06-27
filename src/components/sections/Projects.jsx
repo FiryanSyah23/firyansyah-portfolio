@@ -7,14 +7,22 @@ import Badge from "../ui/Badge";
 import { motion } from "framer-motion";
 
 const cardVariants = {
-	hidden: { y: -60, opacity: 0, scale: 0.8 },
-	show: { y: 0, opacity: 1, scale: 1 },
+	hidden: { opacity: 0, y: -20 },
+	show: { opacity: 1, y: 0 },
 };
 
 export default function Projects() {
 	return (
-		<section id="projects" className="px-3 lg:px-8 pt-20 container mx-auto scroll-mt-40 py-20">
-			<h2 className="text-accent font-semibold text-center text-3xl ">Things I&apos;ve Created</h2>
+		<section id="projects" className="px-3 sm:px-1 lg:px-8 pt-20 container mx-auto scroll-mt-40 py-20">
+			<motion.h2
+				initial={{ opacity: 0, y: -100, scale: 0 }}
+				whileInView={{ opacity: 1, y: 0, scale: 1 }}
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 0.7, delay: 0.2 }}
+				className="text-accent font-semibold text-center text-3xl "
+			>
+				Things I&apos;ve Created
+			</motion.h2>
 			<div className="flex justify-center mt-10 flex-wrap gap-5 xl:gap-10 select-none">
 				{dataProjects.slice(0, 8).map((item, index) => (
 					<motion.div
@@ -22,26 +30,25 @@ export default function Projects() {
 						variants={cardVariants}
 						initial="hidden"
 						whileInView="show"
-						viewport={{ once: true, amount: 0.2 }}
+						viewport={{ once: true, amount: 0.5 }}
 						transition={{
-							duration: 0.3,
+							duration: 0.5,
 							delay: 0.2,
-							ease: "easeIn",
 						}}
 						className={cn(
-							"sm:w-full md:w-90  max-sm:grow flex flex-col justify-between ",
+							" w-full sm:w-75 md:w-90  max-sm:grow flex flex-col justify-between ",
 							"bg-panel text-white rounded-lg overflow-hidden p-3 gap-5 ",
 							"outline-1 shadow-[0px_0px_5px_#ffffff] ",
 							"hover:shadow-[0px_0px_8px_#ffffff]  hover:-translate-y-2 hover:bg-panel-hover duration-1000 group ",
 						)}
 					>
-						<div className="overflow-hidden rounded-lg max-lg:shrink-0  ">
+						<div className="overflow-hidden rounded-lg shrink-0  ">
 							<Image
 								src={item.image}
 								alt={`${item.title} project image`}
 								width={400}
 								height={400}
-								className="object-cover h-50  duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
+								className="object-cover h-50 w-full duration-300 group-hover:scale-105 group-active:scale-105 duration-1000"
 							/>
 						</div>
 

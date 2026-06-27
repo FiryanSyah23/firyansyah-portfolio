@@ -48,7 +48,7 @@ export default function SlideShow({ project, setFull, full }) {
 		<div
 			className={cn(
 				"mt-15 text-white w-full  shadow-[0px_0px_10px_#b13bff78] inset-shadow-2xs inset-shadow-[0px_0px_10px_#b13bff] ",
-				"h-200 max-sm:h-50  rounded-xl overflow-hidden relative  ",
+				` ${full ? "h-full" : "h-65 sm:h-100"} rounded-xl overflow-hidden relative  `,
 			)}
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
@@ -67,8 +67,9 @@ export default function SlideShow({ project, setFull, full }) {
 					<Image
 						src={project.projectImg[currentIndex]}
 						alt={`${project.title} preview image`}
-						fill
-						className={`object-cover h-full rounded-lg `}
+						width={1500}
+						height={1500}
+						className={`object-cover w-full h-full rounded-lg `}
 						priority={true}
 					/>
 				</motion.div>
@@ -86,7 +87,7 @@ export default function SlideShow({ project, setFull, full }) {
 			</div>
 
 			<button
-				className="absolute bottom-1 right-2 max-sm:hidden mix-blend-difference opacity-50 z-100"
+				className="absolute bottom-1 right-2 max-lg:hidden mix-blend-difference opacity-50 z-100"
 				onClick={() => {
 					setFull(!full);
 				}}
