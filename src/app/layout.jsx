@@ -86,8 +86,11 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full scrollbar-none `}>
-			<body className="bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed ">
+		<html
+			lang="en"
+			className={`${geistSans.variable} ${geistMono.variable}  scrollbar-none bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed `}
+		>
+			<body>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 				<GoogleTranslateFix />
 				<Analytics />
