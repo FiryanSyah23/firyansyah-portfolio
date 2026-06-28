@@ -1,18 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleTranslateFix from "@/hooks/GoogleTranslateFix";
-
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
-});
 
 export const metadata = {
 	metadataBase: new URL("https://firyansyah-portfolio.vercel.app"),
@@ -86,10 +75,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html
-			lang="en"
-			className={`${geistSans.variable} ${geistMono.variable}  scrollbar-none bg-radial-[at_50%_100%] from-dark to-[#000000]  bg-fixed `}
-		>
+		<html lang="en">
 			<body>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 				<GoogleTranslateFix />
