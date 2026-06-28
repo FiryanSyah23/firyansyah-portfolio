@@ -11,13 +11,7 @@ export default function NavbarProject() {
 			<nav className="container xl:w-290 mx-auto bg-panel/98  md:py-2 rounded-xl relative outline-white outline-1">
 				<div className="flex justify-between items-center px-8 ">
 					<Link href="/" rel="noopener noreferrer" className="nav-title flex gap-2 items-center">
-						<Image
-							src={"/FISOCTASYM.png"}
-							alt="Fisoctasym logo mini"
-							width={50}
-							height={50}
-							className="w-8 h-auto"
-						/>
+						<Image src={"/FISOCTASYM.png"} alt="Fisoctasym logo mini" width={50} height={50} className="w-8 h-auto" />
 						<span className="font-bold lg:text-2xl text-lg tracking-widest text-nowrap">FISOCTASYM </span>
 					</Link>
 
@@ -40,6 +34,8 @@ export default function NavbarProject() {
 						onClick={() => {
 							setMenu((prev) => !prev);
 						}}
+						aria-label="Toggle navigation menu"
+						aria-expanded={menu}
 					>
 						<i className="ri-menu-line ri-2x"></i>
 					</button>

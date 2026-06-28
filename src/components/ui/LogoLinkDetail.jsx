@@ -35,7 +35,7 @@ export default function LogoLinkDetail() {
 				className="group flex items-center gap-2"
 			>
 				<i className="ri-whatsapp-line text-secondary group-hover:text-white"></i>
-				<span>085135886173</span>
+				<span>{contactInfo.whatsapp}</span>
 			</a>
 
 			<a
@@ -45,7 +45,7 @@ export default function LogoLinkDetail() {
 				className="group flex items-center gap-2"
 			>
 				<i className="ri-mail-open-fill text-secondary group-hover:text-white"></i>
-				<span>firyansyah22@gmail.com</span>
+				<span>{email}</span>
 			</a>
 		</>
 	);

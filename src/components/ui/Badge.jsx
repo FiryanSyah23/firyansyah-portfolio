@@ -5,7 +5,7 @@ export default function Badge({ children, className }) {
 	return (
 		<div
 			className={cn(
-				`text-xs font-semibold  p-2 text-nowrap text-center bg-secondary rounded-sm `,
+				`text-xs font-semibold p-2 text-nowrap text-center rounded-sm`,
 				className,
 			)}
 		>

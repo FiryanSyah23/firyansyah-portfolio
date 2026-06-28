@@ -22,24 +22,24 @@ export default function AllProject() {
 			return;
 		}
 
-		const projectCategory = dataProjects.filter((item) => item.tech[0].toLowerCase() === category.toLowerCase());
+		const projectCategory = dataProjects.filter((item) => item.category.toLowerCase() === category.toLowerCase());
 		setFilter(projectCategory);
 	}
 
 	return (
 		<div className="container sm:mx-auto px-4  pt-24 h-dvh overflow-hidden flex flex-col relative">
-			<div className="flex justify-between items-center mb-2">
+			<div className="flex justify-between items-center mb-5">
 				<button
 					className={cn(
 						`text-white text-lg`,
-						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3  active:outline-offset-3  rounded-xl`,
+						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3  rounded-xl`,
 						`w-20 h-8 xl:w-20 text-center   `,
 					)}
 					onClick={() => router.push("/")}
 				>
 					&laquo; Back
 				</button>
-				<h1 className=" text-accent text-base sm:text-2xl xl:text-3xl  font-extrabold  shrink-0">All Project |</h1>
+				<h1 className=" text-accent text-base sm:text-2xl xl:text-3xl font-extrabold shrink-0">All Project</h1>
 			</div>
 
 			<div className="grid lg:grid-cols-[130px_1fr]  lg:h-full gap-3  overflow-hidden lg:justify-center ">
@@ -101,9 +101,10 @@ export default function AllProject() {
 							<div className="flex flex-col gap-3 w-full">
 								<h2 className="text-accent text-xl lg:text-2xl font-bold">{item.title}</h2>
 								<div className="flex flex-wrap gap-2">
-									{item.tech.map((t, i) => (
-										<Badge key={i} className={"first:bg-gray-700/75"}>
-											{t}
+									<Badge className={"bg-gray-700/75  "}>{item.category}</Badge>
+									{item.tech.map((tech, index) => (
+										<Badge key={index} className={"bg-secondary  "}>
+											{tech}
 										</Badge>
 									))}
 								</div>

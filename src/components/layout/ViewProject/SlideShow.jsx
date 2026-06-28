@@ -67,34 +67,39 @@ export default function SlideShow({ project, setFull, full }) {
 					<Image
 						src={project.projectImg[currentIndex]}
 						alt={`${project.title} preview image`}
-						width={1500}
-						height={1500}
+						fill
 						className={`object-cover w-full h-full rounded-lg `}
 						priority={true}
+						sizes="100vw"
 					/>
 				</motion.div>
 			</AnimatePresence>
 
+			{/* prev and next handler */}
 			<div
 				className={`${project.projectImg.length < 2 ? " hidden" : ""} justify-between  sm:text-3xl text-2xl items-center h-full w-full top-0 z-2 absolute flex *:w-50 `}
 			>
-				<button onClick={goPrev} className="h-full text-start">
+				<button onClick={goPrev} className="h-full text-start" aria-label="Previous image">
 					<i className="ri-arrow-left-wide-line   p-2 rounded-full bg-secondary/20  m-2"></i>
 				</button>
-				<button onClick={goNext} className="h-full text-end">
+				<button onClick={goNext} className="h-full text-end" aria-label="Next image">
 					<i className="ri-arrow-right-wide-line  p-2 rounded-full bg-secondary/20  m-2"></i>
 				</button>
 			</div>
 
+			{/* fullscreen button  */}
 			<button
 				className="absolute bottom-1 right-2 max-lg:hidden mix-blend-difference opacity-50 z-100"
 				onClick={() => {
 					setFull(!full);
 				}}
+				aria-label={full ? "Exit fullscreen" : "Enter fullscreen"}
+				aria-pressed={full}
 			>
 				<i className={` ${full ? "ri-fullscreen-exit-line" : "ri-fullscreen-line"} text-3xl`}></i>
 			</button>
 
+			{/* dinamic dot indicator (pagination) */}
 			<div
 				className={`absolute bottom-3 left-0 right-0 flex justify-center  gap-2 z-10 ${project.projectImg.length < 2 ? " hidden" : ""}`}
 			>
@@ -105,6 +110,8 @@ export default function SlideShow({ project, setFull, full }) {
 							setDirection(index > currentIndex ? 1 : -1);
 							setCurrentIndex(index);
 						}}
+						aria-label={`Go to image ${index + 1}`}
+						aria-current={index === currentIndex ? "true" : "false"}
 						className={cn(
 							"h-2 rounded-full transition-all duration-300 ",
 							index === currentIndex ? "bg-secondary w-4" : "bg-secondary/40 w-2",

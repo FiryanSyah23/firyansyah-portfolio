@@ -53,21 +53,22 @@ export default function Projects() {
 						</div>
 
 						<div className="flex flex-col gap-2 ">
-							<h3 className="text-2xl font-bold mb-1 text-accent">{item.title}</h3>
+							<h3 className="text-2xl font-bold mb-1 text-accent ">{item.title}</h3>
 							<div className="flex items-center gap-3 flex-wrap pb-3 ">
-								{item.tech.slice(0, 4).map((tech, index) => (
-									<Badge key={index} className={"first:bg-gray-700/75 "}>
+								<Badge className={"bg-gray-700/75 rounded-sm"}>{item.category}</Badge>
+								{item.tech.slice(0, 3).map((tech, index) => (
+									<Badge key={index} className={"bg-secondary"}>
 										{tech}
 									</Badge>
 								))}
-								{item.tech.length > 4 && (
+								{item.tech.length > 3 && (
 									<div className="bg-gray-700/75 text-xs text-center p-2 rounded-sm font-semibold">
-										+{item.tech.length - 4}
+										+{item.tech.length - 3}
 									</div>
 								)}
 							</div>
 
-							<div className="overflow-hidden h-30">
+							<div className="overflow-hidden h-30 ">
 								<p className="text-base/tight text-muted  group-hover:text-white group-active:text-white duration-1000 pb-3 text-justify">
 									{item.description.split(" ").length > 30
 										? item.description.split(" ").slice(0, 30).join(" ") + " ..."

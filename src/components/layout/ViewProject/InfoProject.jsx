@@ -11,17 +11,16 @@ export default function InfoProject({ project }) {
 						{project.title}
 					</h1>
 					<div className="flex max-lg:flex-wrap max-lg:justify-center items-center  max-md:gap-2 gap-3 max-md:w-full ">
+						<Badge className={"bg-gray-700/75 grow "}>{project.category}</Badge>
 						{project.tech.map((item, index) => (
-							<Badge key={index} className={"first:bg-gray-700/75 grow "}>
+							<Badge key={index} className={"bg-secondary grow "}>
 								{item}
 							</Badge>
 						))}
 					</div>
 					<div className="max-md:self-start ">
 						<span>status : </span>
-						<span
-							className={`${project.status === "Completed" ? "text-success" : "text-danger"} font-bold`}
-						>
+						<span className={`${project.status === "Completed" ? "text-success" : "text-danger"} font-bold`}>
 							{project.status}
 						</span>
 					</div>
