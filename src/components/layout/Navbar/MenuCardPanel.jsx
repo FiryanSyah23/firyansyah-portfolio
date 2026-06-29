@@ -21,9 +21,9 @@ export default function MenuCardPanel({ menu, setMenu }) {
 						href="/files/CV_Firyan_Syah.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch  text-center outline-2 hover:outline-offset-3 active:outline-offset-3"
+						className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch  text-center outline-2 hover:outline-offset-3 active:outline-offset-3 font-bold"
 					>
-						View my CV
+						Unduh CV
 					</a>
 				</div>
 			</div>

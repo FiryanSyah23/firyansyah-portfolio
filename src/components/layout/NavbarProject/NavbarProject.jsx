@@ -23,9 +23,9 @@ export default function NavbarProject() {
 							href="/files/CV_Firyan_Syah.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
-							className=" rounded-lg bg-primary hover:bg-secondary active:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap"
+							className=" rounded-lg bg-primary hover:bg-secondary active:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap font-bold"
 						>
-							View my CV
+							Unduh CV
 						</a>
 					</div>
 
