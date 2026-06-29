@@ -118,26 +118,24 @@ export default function AboutMe() {
 					</div>
 					<div className="flex-col flex justify-center">
 						<motion.h2 variants={title} className="text-3xl font-extrabold mb-5">
-							Get to Know <span className="text-accent">Firyan Syah</span>
+							Get to Know <span className="text-accent">Me</span>
 						</motion.h2>
 
 						<div className="text-muted space-y-4 max-h-full ">
 							<motion.p variants={item}>
-								I&apos;m a passionate <strong className="text-accent">Software Engineer </strong>
-								focused on building reliable and efficient solutions. From embedded systems and IoT to modern web
-								applications, I enjoy turning ideas into products that solve real-world problems.
+								Saya seorang <strong className="text-accent">Software Engineer</strong> yang lebih banyak berfokus pada Web
+								Development dan UI yang clean & modern. Saya senang membuat website yang bukan hanya terlihat menarik,
+								tetapi juga memiliki performa yang baik dan pengalaman pengguna yang nyaman.
 							</motion.p>
 
 							<motion.p variants={item}>
-								Besides working as a developer, I founded
-								<strong className="text-accent"> FISOCTASYM</strong>, my personal brand and web development service.
-								Through FISOCTASYM, I help individuals, businesses, and organizations create modern, responsive, and
-								high-performance websites with a strong emphasis on user experience and clean design.
+								Selain pengembangan website, saya juga memiliki pengalaman di bidang Embedded System, IoT, dan pengembangan
+								aplikasi untuk berbagai kebutuhan.
 							</motion.p>
 
 							<motion.p variants={item}>
-								The FISOCTASYM symbol represents creativity, technology, and continuous growth. It reflects my mission to
-								bridge software and hardware while delivering digital solutions that bring ideas to life.
+								Melalui FISOCTASYM, saya terus mengembangkan solusi digital dengan menggabungkan desain yang menarik,
+								teknologi yang tepat, dan kode yang mudah dikembangkan.
 							</motion.p>
 						</div>
 					</div>

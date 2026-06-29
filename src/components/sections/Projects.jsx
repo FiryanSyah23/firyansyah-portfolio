@@ -82,13 +82,13 @@ export default function Projects() {
 									rel="noopener noreferrer"
 									className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full text-center ${!item.demo ? "hidden" : "inline-block"}`}
 								>
-									View Project
+									Live Demo
 								</a>
 								<Link
 									href={`/project/${item.slug}`}
 									className={`bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md  outline-2 hover:outline-offset-5  w-full  `}
 								>
-									View Project Detail
+									Lihat Detail
 								</Link>
 							</div>
 						</div>
@@ -101,7 +101,7 @@ export default function Projects() {
 					scroll={false}
 					className={`bg-primary/75 hover:bg-secondary text-white text-xl text-center mt-10 p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
 				>
-					See more
+					Lihat Project Selengkapnya
 				</Link>
 			</div>
 		</section>

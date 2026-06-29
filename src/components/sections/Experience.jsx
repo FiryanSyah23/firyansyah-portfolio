@@ -47,35 +47,22 @@ export default function Experience() {
 					className="mt-10"
 				>
 					<motion.h3 variants={fadeTop} className=" text-white font-semibold text-center text-xl  ">
-						Programing Experience Journey
+						My Journey
 					</motion.h3>
-					<motion.p
-						variants={fadeTop}
-						className="lg:text-lg/relaxed text-sm/relaxed text-muted py-2 text-center"
-					>
-						My passion for programming has grown through freelance work and hands-on training experiences.
-						Every challenge I&apos;ve faced has shaped my skills, and I&apos;m proud of the journey that
-						continues to inspire me.
+					<motion.p variants={fadeTop} className="lg:text-lg/relaxed text-sm/relaxed text-muted py-2 text-center">
+						Setiap proyek menjadi kesempatan untuk terus belajar dan meningkatkan kemampuan. Dari pengembangan website
+						hingga embedded system, saya selalu berusaha memberikan hasil yang rapi, efisien, dan mudah digunakan.
 					</motion.p>
 					<RenderExperienceCard fadeTop={fadeTop} />
 				</motion.div>
 				<div id="skillExperience" className="flex justify-center flex-col pt-20 scroll-mt-40">
-					<motion.div
-						variants={container}
-						initial="hidden"
-						whileInView="show"
-						viewport={{ once: true, amount: 0.3 }}
-					>
+					<motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
 						<motion.h3 variants={fadeTop} className=" text-white font-semibold text-center text-xl">
-							Programming Languages & Tools{" "}
+							Programming Languages & Tools
 						</motion.h3>
-						<motion.p
-							variants={fadeTop}
-							className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center"
-						>
-							These are the technologies and tools I work with daily, backed by years of experience
-							building fast, interactive web applications, and developing IoT systems that connect the
-							digital world with the physical one.
+						<motion.p variants={fadeTop} className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
+							Teknologi yang sering saya gunakan untuk membangun website modern, aplikasi, database, hingga proyek
+							embedded dan Internet of Things.
 						</motion.p>
 					</motion.div>
 

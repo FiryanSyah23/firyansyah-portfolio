@@ -16,7 +16,8 @@ export default function Footer() {
 						<h2 className="text-4xl">Firyan Syah</h2>
 						<p className="mb-2">Full-Stack Developer | IoT Enthusiast</p>
 						<p className="border-b-2 border-b-white pb-2">
-							Interested in working together or discussing a project? Feel free to reach out.
+							Tertarik membuat website atau berdiskusi soal project?{" "}
+							<strong className="text-accent">Let&apos;s Connect!</strong>
 						</p>
 					</div>
 					<div className={`${linkListClass} *:w-56`}>
@@ -75,8 +76,7 @@ export default function Footer() {
 			</div>
 
 			<div className="text-center py-3 border-t border-t-white text-sm">
-				© {new Date().getFullYear()} Firyan Syah. All rights reserved. Built with Next.js & Tailwind
-				CSS.
+				© {new Date().getFullYear()} Firyan Syah. All rights reserved. Built with Next.js & Tailwind CSS.
 			</div>
 		</footer>
 	);

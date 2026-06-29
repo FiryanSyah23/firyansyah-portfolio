@@ -27,7 +27,7 @@ export default function LeftMotion() {
 			transition={{ duration: 0.5 }}
 			className="main-header title flex justify-center lg:text-start text-center flex-col gap-3 lg:order-1 order-2"
 		>
-			<h1 className="max-md:text-2xl sm:text-4xl xl:text-4xl font-bold">Hello I&apos;m Firyan Syah</h1>
+			<h1 className="max-md:text-2xl sm:text-4xl xl:text-4xl font-bold">Halo Saya Firyan Syah</h1>
 
 			<p className="max-md:text-5xl/tight sm:text-7xl md:text-6xl xl:text-8xl tracking-tight leading-tight">
 				<motion.span variants={container} initial="hidden" animate="show">
@@ -68,8 +68,8 @@ export default function LeftMotion() {
 			</p>
 
 			<p className="text-muted mt-2 md:text-base/relaxed">
-				I build web applications, mobile apps, embedded & IoT systems — bridging the gap between software and hardware.
-				Always learning, always shipping.
+				Saya membangun website modern dengan desain yang clean, responsif, dan nyaman digunakan. Sesekali juga
+				mengembangkan aplikasi, embedded system, dan solusi IoT.
 			</p>
 		</motion.div>
 	);

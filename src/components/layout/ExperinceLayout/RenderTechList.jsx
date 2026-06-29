@@ -21,9 +21,7 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 							className={cn(
 								` cursor-pointer outline-1 `,
 								` duration-700 delay-200 p-2 flex flex-col h-11 justify-between  `,
-								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] text-white" : "bg-panel/80 text-muted"}`,
-								`${hoverList && category.category !== "Tools" ? "h-31" : ""}  `,
-								`${hoverList && category.category === "Tools" ? "h-26 " : ""}`,
+								`${hoverList ? " bg-panel-hover  shadow-[0px_0px_5px_#ffffff] text-white h-32" : "bg-panel/80 text-muted"}`,
 							)}
 						>
 							<div className={`flex justify-center items-center gap-2 `}>

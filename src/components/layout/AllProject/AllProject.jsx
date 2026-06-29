@@ -116,13 +116,13 @@ export default function AllProject() {
 										rel="noopener noreferrer"
 										className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full ${!item.demo ? "hidden" : "inline-block"}  `}
 									>
-										View Project
+										Live Demo
 									</Link>
 									<Link
 										href={`/project/${item.slug}`}
 										className="bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full"
 									>
-										View Project Detail
+										Lihat Detail
 									</Link>
 								</div>
 							</div>
