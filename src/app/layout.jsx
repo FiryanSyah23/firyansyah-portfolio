@@ -13,7 +13,7 @@ export const metadata = {
 		template: "%s | Firyan Syah",
 	},
 	description:
-		"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products with responsive and minimalist designs.",
+		"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis.",
 	verification: {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},
@@ -40,14 +40,15 @@ export const metadata = {
 		url: "https://firyansyah-portfolio.vercel.app",
 		siteName: "Firyan Syah Portfolio",
 		title: "Firyan Syah | Software Engineer",
-		description: "Hi, I'm Firyan Syah — Software Engineering. I build web apps, IoT systems, and embedded system.",
+		description:
+			"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis",
 		images: [{ url: "/OctaSym.png", width: 1200, height: 630 }],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Firyan Syah | Software Engineer",
 		description:
-			"Hi, I'm Firyan Syah, a Software Engineer passionate about turning ideas into real-world web products.",
+			"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis",
 		images: ["/OctaSym.png"],
 	},
 };

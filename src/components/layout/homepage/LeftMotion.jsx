@@ -68,8 +68,8 @@ export default function LeftMotion() {
 			</p>
 
 			<p className="text-muted mt-2 md:text-base/relaxed">
-				Saya membangun website modern dengan desain yang clean, responsif, dan nyaman digunakan. Sesekali juga
-				mengembangkan aplikasi, embedded system, dan solusi IoT.
+				Merancang pengalaman digital modern dan menghadirkan solusi inovatif melalui website, aplikasi, embedded
+				system, dan IoT.
 			</p>
 		</motion.div>
 	);
