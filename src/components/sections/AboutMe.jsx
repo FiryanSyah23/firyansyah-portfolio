@@ -76,7 +76,7 @@ export default function AboutMe() {
 	const resposiveCard = cn("xl:h-100 xl:w-80 md:h-80 md:w-60 h-80 w-60 ");
 
 	return (
-		<section id="about" className="w-full py-20 scroll-mt-40">
+		<section id="about" className="w-full py-20 scroll-mt-10">
 			<div className="container mx-auto text-white sm:px-8 px-4 ">
 				<motion.div
 					variants={container}

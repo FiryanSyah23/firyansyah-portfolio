@@ -13,7 +13,7 @@ const cardVariants = {
 
 export default function Projects() {
 	return (
-		<section id="projects" className="px-3 sm:px-1 lg:px-8 pt-20 container mx-auto scroll-mt-40 py-20">
+		<section id="projects" className="px-3 sm:px-1 lg:px-8 pt-20 container mx-auto scroll-mt-10 py-20">
 			<motion.h2
 				initial={{ opacity: 0, y: -100, scale: 0 }}
 				whileInView={{ opacity: 1, y: 0, scale: 1 }}

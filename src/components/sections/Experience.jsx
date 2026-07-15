@@ -28,7 +28,7 @@ const fadeTop = {
 
 export default function Experience() {
 	return (
-		<section id="experience" className="w-full py-20 scroll-mt-40  ">
+		<section id="experience" className="w-full py-20 scroll-mt-10  ">
 			<div className="max-sm:px-4 px-8 container mx-auto ">
 				<motion.h2
 					initial={{ opacity: 0, y: -30 }}
