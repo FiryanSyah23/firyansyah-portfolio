@@ -17,11 +17,7 @@ export const metadata = {
 	verification: {
 		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
 	},
-	icons: {
-		icon: "/favicon.svg",
-		shortcut: "/favicon.svg",
-		apple: "/favicon.svg",
-	},
+	manifest: "/manifest.json",
 	keywords: [
 		"Firyan Syah",
 		"Software Engineer",
