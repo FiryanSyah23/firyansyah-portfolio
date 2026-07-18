@@ -15,7 +15,7 @@ export const metadata = {
 	description:
 		"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis.",
 	verification: {
-		google: "Qi3tFwJMO2-UkhkngxLnY20qrdN0PfyqvvLqBx4BRnQ",
+		google: "utjBbNej2Vn1MxRg-clp2_AJ2V1p790MeqixN6hcu7o",
 	},
 	manifest: "/manifest.json",
 	keywords: [
