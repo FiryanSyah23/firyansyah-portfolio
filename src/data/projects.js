@@ -56,7 +56,7 @@ const dataProjects = [
 			"/imgProject/portfolio/skills.png",
 			"/imgProject/portfolio/projects.png",
 		],
-		demo: "https://firyansyah-portfolio.vercel.app",
+		demo: "https://firyansyah.my.id",
 		status: "Completed",
 		year: "2025",
 	},

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 		return { title: "Project Not Found", robots: { index: false, follow: false } };
 	}
 
-	const url = `https://firyansyah-portfolio.vercel.app/project/${slug}`;
+	const url = `https://firyansyah.my.id/project/${slug}`;
 
 	return {
 		title: `${project.title}`,
@@ -51,16 +51,13 @@ export default async function HomeProject({ params }) {
 		"@type": "CreativeWork",
 		name: project.title,
 		description: project.description,
-		image: `https://firyansyah-portfolio.vercel.app${project.image}`,
+		image: `https://firyansyah.my.id${project.image}`,
 		creator: { "@type": "Person", name: "Firyan Syah" },
 	};
 
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-			/>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 			<ViewProject params={params} />
 		</>
 	);

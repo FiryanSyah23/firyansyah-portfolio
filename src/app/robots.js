@@ -1,6 +1,6 @@
 export default function robots() {
 	return {
 		rules: { userAgent: "*", allow: "/" },
-		sitemap: "https://firyansyah-portfolio.vercel.app/sitemap.xml",
+		sitemap: "https://firyansyah.my.id/sitemap.xml",
 	};
 }

@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/next";
 import GoogleTranslateFix from "@/hooks/GoogleTranslateFix";
 
 export const metadata = {
-	metadataBase: new URL("https://firyansyah-portfolio.vercel.app"),
+	metadataBase: new URL("https://firyansyah.my.id"),
 	alternates: {
-		canonical: "https://firyansyah-portfolio.vercel.app",
+		canonical: "https://firyansyah.my.id",
 	},
 	title: {
 		default: "Firyan Syah | Software Engineer",
@@ -33,7 +33,7 @@ export const metadata = {
 	authors: [{ name: "Firyan Syah" }],
 	openGraph: {
 		type: "website",
-		url: "https://firyansyah-portfolio.vercel.app",
+		url: "https://firyansyah.my.id",
 		siteName: "Firyan Syah Portfolio",
 		title: "Firyan Syah | Software Engineer",
 		description:
@@ -60,8 +60,8 @@ const jsonLd = {
 	"@type": "Person",
 	name: "Firyan Syah",
 	jobTitle: "Software Engineer",
-	url: "https://firyansyah-portfolio.vercel.app",
-	image: "https://firyansyah-portfolio.vercel.app/profile.png",
+	url: "https://firyansyah.my.id",
+	image: "https://firyansyah.my.id/profile.png",
 	sameAs: ["https://github.com/FiryanSyah23", "https://linkedin.com/in/firyansyah"],
 	address: {
 		"@type": "PostalAddress",

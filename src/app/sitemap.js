@@ -1,7 +1,7 @@
 // src/app/sitemap.js
 import dataProjects from "@/data/projects";
 
-const BASE_URL = "https://firyansyah-portfolio.vercel.app";
+const BASE_URL = "https://firyansyah.my.id";
 
 export default function sitemap() {
 	const projectPages = dataProjects.map((project) => ({

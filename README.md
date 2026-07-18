@@ -17,7 +17,7 @@ A modern and responsive personal portfolio website built with **Next.js** and **
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=FiryanSyah23&color=blueviolet&style=for-the-badge" />
-  <a href="https://firyansyah-portfolio.vercel.app/">
+  <a href="https://firyansyah.my.id/">
     <img src="https://img.shields.io/badge/Live-Demo-black?logo=vercel&style=for-the-badge" />
   </a>
 </p>
