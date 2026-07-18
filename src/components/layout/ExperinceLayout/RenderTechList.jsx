@@ -16,6 +16,7 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 						variants={fadeTop}
 						onMouseEnter={() => setExpandList(tech)}
 						onMouseLeave={() => setExpandList(null)}
+						
 					>
 						<div
 							className={cn(
