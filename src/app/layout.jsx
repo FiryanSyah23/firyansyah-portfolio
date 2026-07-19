@@ -30,6 +30,14 @@ export const metadata = {
 		"Custom Website Development ",
 		"Professional Web Developer ",
 	],
+	icons: {
+		icon: [
+			{ url: "/icon.svg", type: "image/svg+xml" },
+			{ url: "/icon.png", type: "image/png" },
+			{ url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+		],
+		apple: "/apple-icon.png",
+	},
 	authors: [{ name: "Firyan Syah" }],
 	openGraph: {
 		type: "website",
