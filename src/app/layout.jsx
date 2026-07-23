@@ -32,9 +32,8 @@ export const metadata = {
 	],
 	icons: {
 		icon: [
-			{ url: "/icon.svg", type: "image/svg+xml" },
-			{ url: "/icon.png", type: "image/png" },
-			{ url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+			{ url: "/icon.svg", sizes: "1000x1000", type: "image/svg+xml" },
+			{ url: "/icon.png", sizes: "96x96", type: "image/png" },
 		],
 		apple: "/apple-icon.png",
 	},
@@ -46,14 +45,14 @@ export const metadata = {
 		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis",
-		images: [{ url: "/OctaSym.png", width: 1200, height: 630 }],
+		images: [{ url: "/icon.png", width: 1200, height: 630 }],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Firyan Syah | Software Engineer",
 		description:
 			"Hai, saya Firyan Syah, seorang Software Engineer yang bersemangat mengubah ide menjadi produk web dunia nyata dengan desain responsif dan minimalis",
-		images: ["/OctaSym.png"],
+		images: ["/icon.png"],
 	},
 };
 
