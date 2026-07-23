@@ -120,40 +120,6 @@ Contact information and navigation links.
 
 ---
 
-## ⚡ Getting Started
-
-Clone repository:
-
-```bash
-git clone https://github.com/username/firyansyah-portfolio.git
-```
-
-Move into project directory:
-
-```bash
-cd name-portfolio
-```
-
-Install dependencies:
-
-```bash
-pnpm install
-```
-
-Run development server:
-
-```bash
-pnpm dev
-```
-
-Open:
-
-```text
-http://localhost:3000
-```
-
----
-
 ## 👨‍💻 Author
 
 ### Firyan Syah
