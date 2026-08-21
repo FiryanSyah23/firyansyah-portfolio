@@ -61,7 +61,7 @@ export default function Experience() {
 							Programming Languages & Tools
 						</motion.h3>
 						<motion.p variants={fadeTop} className="lg:text-lg/relaxed text-sm/relaxed text-muted mt-5 text-center">
-							Teknologi yang sering saya gunakan untuk membangun website modern, aplikasi, database, hingga proyek
+							Teknologi yang saya gunakan untuk membangun website modern, aplikasi, database, cloud, hingga proyek
 							embedded dan Internet of Things.
 						</motion.p>
 					</motion.div>

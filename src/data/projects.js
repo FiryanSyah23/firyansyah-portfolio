@@ -8,7 +8,7 @@ const dataProjects = [
 		longDescription:
 			"Digital Twins GUI adalah aplikasi pemantauan real-time yang dikembangkan untuk mensimulasikan dan memvisualisasikan perilaku sistem panel surya. Aplikasi dibangun menggunakan Python dengan antarmuka GUI kustom, terhubung ke mikrokontroler Arduino melalui komunikasi serial (protokol UART) untuk mengumpulkan data sensor langsung. Ini menampilkan parameter listrik utama termasuk tegangan (V), arus (A), dan daya (W) secara real-time dengan grafik dinamis dan pembacaan numerik. Sistem ini dirancang mengikuti konsep Digital Twin — menciptakan representasi virtual dari pengaturan panel surya fisik — sehingga berguna untuk observasi, analisis, dan pembelajaran akademis. Proyek ini aktif digunakan di Laboratorium Teknik Elektro UIN Ar-Raniry sebagai sarana pendidikan untuk membantu mahasiswa memahami sistem energi surya dan akuisisi data. Firmware ditulis dalam C++ untuk sisi Arduino, menangani pembacaan sensor ADC dan transmisi data serial, sementara Python menangani penguraian data, pemrosesan, dan rendering GUI.",
 		category: "Desktop App",
-		tech: ["Python", "Arduino"],
+		tech: ["Python", "Arduino", "C/C++"],
 		image: "/imgProject/digitalTwins/digitalTwins.png",
 		projectImg: ["/imgProject/digitalTwins/digitalTwins.png"],
 		demo: null,

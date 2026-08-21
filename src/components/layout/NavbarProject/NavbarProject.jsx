@@ -20,7 +20,7 @@ export default function NavbarProject() {
 							<SosmedLogoLink />
 						</div>
 						<a
-							href="/files/CV_Firyan_Syah.pdf"
+							href="/files/CV Firyan Syah.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 							className=" rounded-lg bg-primary hover:bg-secondary active:bg-secondary outline p-2 duration-300 active:translate-y-1 shadow-[2px_4px_1px_.5px_rgba(0,0,0)] active:shadow-none text-sm text-nowrap font-bold"
@@ -51,7 +51,7 @@ export default function NavbarProject() {
 							</div>
 
 							<a
-								href="/files/CV_Firyan_Syah.pdf"
+								href="/files/CV Firyan Syah.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="bg-primary p-1 rounded-xl hover:bg-secondary active:bg-secondary self-stretch  text-center outline-2 hover:outline-offset-3 active:outline-offset-3 font-bold"

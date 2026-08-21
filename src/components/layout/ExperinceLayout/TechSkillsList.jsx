@@ -20,7 +20,7 @@ export default function TechSkillsList({ fadeTop, container }) {
 			</motion.div>
 			<div className="techlist flex flex-wrap justify-center gap-10 ">
 				{dataSkillsWithCount.map((category, catIndex) => {
-					const allZero = category.items.every((tech) => tech.projectCount === 0);
+					// const allZero = category.items.every((tech) => tech.projectCount === 0);
 					return (
 						<motion.div
 							key={catIndex}
@@ -28,9 +28,7 @@ export default function TechSkillsList({ fadeTop, container }) {
 							initial="hidden"
 							whileInView="show"
 							viewport={{ once: true, amount: 0.3 }}
-							className={`flex flex-col text-base items-center w-60 sm:w-49 text-center font-semibold ${
-								allZero ? "hidden" : ""
-							}`}
+							className={`flex flex-col text-sm items-center w-60 sm:w-49 text-center font-semibold `}
 						>
 							<motion.div
 								initial={{ y: -30, scale: 0, opacity: 0 }}

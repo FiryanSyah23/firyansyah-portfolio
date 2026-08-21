@@ -27,7 +27,7 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 						>
 							<div className={`flex justify-center items-center gap-2 `}>
 								<Image src={tech.logo} alt={`${tech.name} logo-tech`} width={50} height={50} className="w-7 h-auto" />
-								<p className="text-sm">{tech.name}</p>
+								<p className="text-xs">{tech.name}</p>
 							</div>
 
 							<div className={`${hoverList ? "opacity-100  " : "opacity-0"} duration-2500 ease-in-out delay-150`}>
