@@ -168,7 +168,7 @@ const dataSkills = [
 				name: "Supabase",
 				logo: "/logo/supabase.png",
 				description:
-					"Backend-as-a-Service berbasis PostgreSQL dengan database, storage, dan realtime API untuk aplikasi modern.",
+					"Backend Service berbasis PostgreSQL dengan database, storage, dan realtime API untuk aplikasi modern.",
 				projectCount: 0,
 				startDate: "2026-08-21",
 			},

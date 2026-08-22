@@ -16,7 +16,6 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 						variants={fadeTop}
 						onMouseEnter={() => setExpandList(tech)}
 						onMouseLeave={() => setExpandList(null)}
-						
 					>
 						<div
 							className={cn(
@@ -27,14 +26,12 @@ export default function RenderTechList({ category, setExpandList, expandList, fa
 						>
 							<div className={`flex justify-center items-center gap-2 `}>
 								<Image src={tech.logo} alt={`${tech.name} logo-tech`} width={50} height={50} className="w-7 h-auto" />
-								<p className="text-xs">{tech.name}</p>
+								<p className="text-xs font-bold">{tech.name}</p>
 							</div>
 
 							<div className={`${hoverList ? "opacity-100  " : "opacity-0"} duration-2500 ease-in-out delay-150`}>
-								<div
-									className={`flex flex-col justify-between  ${category.category === "Tools" ? "" : ""} ${hoverList ? "" : "hidden"}`}
-								>
-									<p className={`text-white text-xs`}>{tech.description}</p>
+								<div className={`flex flex-col justify-between ${hoverList ? "" : "hidden"}`}>
+									<p className={`text-white text-xs font-normal`}>{tech.description}</p>
 								</div>
 							</div>
 
