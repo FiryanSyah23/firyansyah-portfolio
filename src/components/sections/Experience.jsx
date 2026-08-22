@@ -55,7 +55,7 @@ export default function Experience() {
 					</motion.p>
 					<RenderExperienceCard fadeTop={fadeTop} />
 				</motion.div>
-				<div id="skillExperience" className="flex justify-center flex-col pt-20 scroll-mt-40">
+				<div id="skillExperience" className="flex justify-center flex-col pt-20 scroll-mt-40 ">
 					<motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
 						<motion.h3 variants={fadeTop} className=" text-white font-semibold text-center text-xl">
 							Programming Languages & Tools

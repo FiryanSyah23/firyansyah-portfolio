@@ -78,7 +78,7 @@ export default function AllProject() {
 					</button>
 				</div>
 
-				<div className="flex flex-col gap-5 min-h-0 overflow-y-auto scrollbar-thumb-border p-2">
+				<div className="flex flex-col gap-5 min-h-0 overflow-y-auto scrollbar-thumb-border p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
 					{filter.map((item, index) => (
 						<motion.div
 							key={index}
@@ -98,7 +98,7 @@ export default function AllProject() {
 									priority={index === 0}
 								/>
 							</div>
-							<div className="flex flex-col gap-3 w-full">
+							<div className="flex flex-1 flex-col gap-3 w-full">
 								<h2 className="text-accent text-xl lg:text-2xl font-bold">{item.title}</h2>
 								<div className="flex flex-wrap gap-2">
 									<Badge className={"bg-gray-700/75  "}>{item.category}</Badge>

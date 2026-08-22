@@ -17,7 +17,7 @@ export default function ViewProject({ params }) {
 			<div className=" w-full relative rounded-xl ">
 				<button
 					className={cn(
-						`text-white text-lg`,
+						`text-white`,
 						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3  active:outline-offset-3  rounded-xl`,
 						`py-1 w-20 left-3 top-3 absolute flex items-center justify-center `,
 					)}
@@ -30,7 +30,7 @@ export default function ViewProject({ params }) {
 
 					<InfoProject project={project} />
 					<div className={`${full ? "hidden" : ""}`}>
-						<p className=" text-justify max-md:indent-10 sm:text-center text-base/relaxed xl:text-lg text-white bg-radial-[at_50%_50%] from-secondary/15 to-transparent to-75%">
+						<p className=" text-justify max-md:indent-10 sm:text-center text-base/relaxed  text-white bg-radial-[at_50%_50%] from-secondary/15 to-transparent to-75%">
 							{project.longDescription}
 						</p>
 					</div>
