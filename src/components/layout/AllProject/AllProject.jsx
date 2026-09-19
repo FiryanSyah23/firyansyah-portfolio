@@ -33,7 +33,7 @@ export default function AllProject() {
 					className={cn(
 						`text-white text-lg`,
 						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3  rounded-xl`,
-						`w-20 h-8 xl:w-20 flex justify-center items-center gap-1  `,
+						`w-20 h-8 xl:w-20 flex justify-center items-center gap-1 text-sm`,
 					)}
 					onClick={() => router.push("/")}
 				>
