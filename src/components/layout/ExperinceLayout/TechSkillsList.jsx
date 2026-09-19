@@ -8,7 +8,7 @@ export default function TechSkillsList({ fadeTop, container }) {
 	const [expandList, setExpandList] = useState(null);
 
 	return (
-		<div className="container mx-auto text-white mt-5 xl:h-210 2xl:h-110 pb-10  ">
+		<div className="container mx-auto text-white mt-5 h-550 md:h-dvh pb-10  ">
 			<div className="techlist flex flex-wrap justify-center gap-10 ">
 				{dataSkillsWithCount.map((category, catIndex) => {
 					// const allZero = category.items.every((tech) => tech.projectCount === 0);
