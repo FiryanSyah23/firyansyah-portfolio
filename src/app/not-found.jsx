@@ -16,9 +16,9 @@ export default function ProjectNotFound() {
 
 			<Link
 				href="/"
-				className="bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3 p-3 text-lg sm:text-xl rounded-2xl text-white w-70 text-center"
+				className="bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3 p-3 text-lg sm:text-xl rounded-2xl text-white w-70 flex items-center justify-center gap-1"
 			>
-				&laquo; Back to Home
+				<i className="ri-arrow-go-back-line"></i>  Back to Home
 			</Link>
 		</div>
 	);

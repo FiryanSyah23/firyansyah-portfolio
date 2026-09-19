@@ -99,7 +99,7 @@ export default function Projects() {
 				<Link
 					href={"/project"}
 					scroll={false}
-					className={`bg-primary/75 hover:bg-secondary text-white text-xl text-center mt-10 p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
+					className={`bg-primary/75 hover:bg-secondary text-white text-md text-center mt-10 p-3 w-40 font-semibold rounded-md duration-600 outline-1`}
 				>
 					Lihat Project Selengkapnya
 				</Link>

@@ -33,11 +33,11 @@ export default function AllProject() {
 					className={cn(
 						`text-white text-lg`,
 						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3 active:outline-offset-3  rounded-xl`,
-						`w-20 h-8 xl:w-20 text-center   `,
+						`w-20 h-8 xl:w-20 flex justify-center items-center gap-1  `,
 					)}
 					onClick={() => router.push("/")}
 				>
-					&laquo; Back
+					<i className="ri-arrow-go-back-line"></i> Back
 				</button>
 				<h1 className=" text-accent text-base sm:text-2xl xl:text-3xl font-extrabold shrink-0">All Project</h1>
 			</div>
@@ -78,7 +78,7 @@ export default function AllProject() {
 					</button>
 				</div>
 
-				<div className="flex flex-col gap-5 min-h-0 overflow-y-auto scrollbar-thumb-border p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+				<div className="flex flex-col gap-5 max-h-[80dvh] overflow-y-auto scrollbar-thumb-border p-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
 					{filter.map((item, index) => (
 						<motion.div
 							key={index}
@@ -86,9 +86,9 @@ export default function AllProject() {
 							whileInView={{ opacity: 1, scale: 1 }}
 							viewport={{ once: false, amount: 0.1 }}
 							transition={{ duration: 0.5 }}
-							className="bg-panel p-3 rounded-xl flex gap-3 max-lg:flex-col text-white outline-2 select-none lg:h-75 shrink-0"
+							className="bg-panel p-3 rounded-xl flex gap-3 flex-col text-white outline-2 select-none shrink-0 overflow-hidden h-140"
 						>
-							<div className="shrink-0 overflow-hidden rounded-lg w-72 lg:w-90 max-lg:w-full h-50 sm:h-70 lg:h-full">
+							<div className="shrink-0 overflow-hidden rounded-lg h-60">
 								<Image
 									src={item.image}
 									alt={`${item.title} - project`}
@@ -108,23 +108,30 @@ export default function AllProject() {
 										</Badge>
 									))}
 								</div>
-								<p className="grow text-sm lg:text-base">{item.description}</p>
-								<div className="flex justify-between gap-3 text-xs md:text-base text-center ">
-									<Link
-										href={`${item.demo}`}
-										target="_blank"
-										rel="noopener noreferrer"
-										className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full ${!item.demo ? "hidden" : "inline-block"}  `}
-									>
-										Live Demo
-									</Link>
-									<Link
-										href={`/project/${item.slug}`}
-										className="bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full"
-									>
-										Lihat Detail
-									</Link>
+
+								<div className="overflow-hidden h-30">
+									<p className="text-base/tight text-muted  group-hover:text-white group-active:text-white duration-1000 pb-3 text-justify">
+										{item.description.split(" ").length > 30
+											? item.description.split(" ").slice(0, 30).join(" ") + " ..."
+											: item.description}
+									</p>
 								</div>
+							</div>
+							<div className="flex justify-between gap-3 text-xs md:text-base text-center ">
+								<Link
+									href={`${item.demo}`}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={`bg-primary hover:bg-secondary p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full ${!item.demo ? "hidden" : "inline-block"}  `}
+								>
+									Live Demo
+								</Link>
+								<Link
+									href={`/project/${item.slug}`}
+									className="bg-primary hover:bg-secondary text-center p-1 font-semibold rounded-md outline-2 hover:outline-offset-5 w-full"
+								>
+									Lihat Detail
+								</Link>
 							</div>
 						</motion.div>
 					))}

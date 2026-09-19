@@ -19,11 +19,11 @@ export default function ViewProject({ params }) {
 					className={cn(
 						`text-white`,
 						`bg-primary hover:bg-secondary active:bg-secondary outline-2 hover:outline-offset-3  active:outline-offset-3  rounded-xl`,
-						`py-1 w-20 left-3 top-3 absolute flex items-center justify-center `,
+						`py-1 w-20 left-3 top-3 absolute flex items-center justify-center gap-1`,
 					)}
 					onClick={() => router.back()}
 				>
-					&laquo; Back
+					<i className="ri-arrow-go-back-line"></i> Back
 				</button>
 				<div className={`flex flex-col sm:p-4 ${full ? "h-full" : ""} `}>
 					<SlideShow project={project} setFull={setFull} full={full} />
